@@ -5513,7 +5513,7 @@ svg.logo text {
 #apps .apps-holder .app-icon-holder {
     position: relative;
     display: inline-block;
-    width: 24%;
+    width: 18%;
     cursor: pointer;
     margin-bottom: 14px;
     z-index: 1;
