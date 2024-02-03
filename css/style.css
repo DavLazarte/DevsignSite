@@ -5563,6 +5563,7 @@ svg.logo text {
 }
 
 #apps .apps-holder .app-details {
+    /* z-index: 1; */
     position: relative;
     min-height: 228px;
     margin-bottom: -86px;
@@ -5574,7 +5575,7 @@ svg.logo text {
 }
 
 #apps .apps-holder .app-details div[class^="app-details"] {
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     left: 0;
     top: 0;
@@ -5586,7 +5587,7 @@ svg.logo text {
 }
 
 #apps .apps-holder .app-details div[class^="app-details"].show-details {
-    opacity: 1;
+    visibility: visible;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -5615,8 +5616,17 @@ svg.logo text {
 }
 
 #apps .apps-holder .app-details div[class^="app-details"] .app-link a {
-    margin-left: 0;
+    margin-left: 0; 
 }
+#apps .apps-holder .app-details div[class^="app-details"].show-details .app-link {
+    position: relative; /* Asegúrate de que el contenedor tenga posicionamiento relativo */
+}
+
+#apps .apps-holder .app-details div[class^="app-details"].show-details .app-link a {
+    position: absolute;
+    /* Ajusta otras propiedades de posición según sea necesario */
+}
+
 
 #apps .apps-holder .app-details div[class^="app-details"] .img-holder img {
     width: 100%;
