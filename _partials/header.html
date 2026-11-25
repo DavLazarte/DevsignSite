@@ -1,0 +1,43 @@
+<!-- HEADER:START · editar en _partials/header.html y correr _tools/sync-partials.mjs -->
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <div class="container header__inner">
+    <a class="brand" href="/" aria-label="Devsign, ir al inicio">
+      <img
+        class="brand__logo"
+        src="/assets/img/logo.webp"
+        alt="Devsign"
+        width="158"
+        height="53"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-nav-toggle
+    >
+      <span class="sr-only nav-toggle__label">Abrir menú</span>
+      <span class="nav-toggle__box" aria-hidden="true">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Principal" data-nav>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="/" data-nav-link>Inicio</a></li>
+        <li><a class="site-nav__link" href="/#casos" data-nav-link>Casos</a></li>
+        <li><a class="site-nav__link" href="/marketing/" data-nav-link>Marketing</a></li>
+        <li><a class="site-nav__link" href="/#contacto" data-nav-link>Contacto</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm" href="/#contacto">Hablemos</a>
+    </nav>
+  </div>
+</header>
+<!-- HEADER:END -->

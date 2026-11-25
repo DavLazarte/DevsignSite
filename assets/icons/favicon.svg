@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Devsign">
+  <defs>
+    <linearGradient id="ds-grad" x1="14" y1="12" x2="52" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0057FF"/>
+      <stop offset=".55" stop-color="#1A73FF"/>
+      <stop offset="1" stop-color="#00C6FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#0A2540"/>
+  <path d="M21 15h10a17 17 0 0 1 0 34H21V15Z" fill="url(#ds-grad)"/>
+</svg>

@@ -1,1 +1,102 @@
+# ==========================================================================
+# Devsign · devsign.ar
+# Apache / DonWeb hosting compartido
+# Todo va envuelto en <IfModule> para que un módulo ausente no rompa el sitio.
+# ==========================================================================
 
+# --- Índice y errores ------------------------------------------------------
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+<IfModule mod_autoindex.c>
+  Options -Indexes
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddDefaultCharset UTF-8
+  AddType font/woff2 .woff2
+  AddType image/webp .webp
+  AddType image/avif .avif
+  AddType image/svg+xml .svg
+  AddType application/xml .xml
+  AddType application/manifest+json .webmanifest
+</IfModule>
+
+# --- HTTPS -----------------------------------------------------------------
+# Se fuerza en producción. En local (.test, localhost, IP de la red) no.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteCond %{HTTP_HOST} !^devsign\.test$ [NC]
+  RewriteCond %{HTTP_HOST} !^localhost$ [NC]
+  RewriteCond %{HTTP_HOST} !^127\.0\.0\.1$ [NC]
+  RewriteCond %{HTTP_HOST} !^10\.
+  RewriteCond %{HTTP_HOST} !^192\.168\.
+  RewriteCond %{HTTP_HOST} !^172\.(1[6-9]|2[0-9]|3[01])\.
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+</IfModule>
+
+# --- Archivos que no se publican -------------------------------------------
+<IfModule mod_rewrite.c>
+  # Carpetas de trabajo: parciales, scripts y documentación interna
+  RewriteRule ^(_partials|_tools)(/|$) - [F,L]
+
+  # Archivos de trabajo y de repositorio
+  RewriteRule \.(md|mjs|ps1|lock|log|bak|sql)$ - [F,L]
+  RewriteRule (^|/)\.(git|env|htaccess|htpasswd) - [F,L]
+</IfModule>
+
+# --- Compresión ------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/xml image/svg+xml
+  # woff2, webp y avif ya vienen comprimidos: no se tocan.
+</IfModule>
+
+# --- Caché -----------------------------------------------------------------
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/avif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType application/xml "access plus 1 day"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # HTML siempre se revalida: así un deploy se ve al instante.
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+
+  # Assets con ?v=fecha: cache larga e immutable.
+  <FilesMatch "\.(css|js|woff2|svg|png|webp|avif|jpg|jpeg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  Header append Vary Accept-Encoding
+
+  # --- Seguridad base ---
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+
+  # HSTS: activar recién cuando el dominio esté 100% en HTTPS.
+  # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+</IfModule>
+
+# --- Tipos MIME alternativos ----------------------------------------------
+<IfModule mod_mime.c>
+  RemoveType .gz
+  AddEncoding gzip .gz
+</IfModule>

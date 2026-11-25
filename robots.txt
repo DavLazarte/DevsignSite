@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /_partials/
+Disallow: /_tools/
+Disallow: /sistema.html
+
+Sitemap: https://devsign.ar/sitemap.xml

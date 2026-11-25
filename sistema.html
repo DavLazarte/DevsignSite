@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="es-AR" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de diseño — Devsign (interno)</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0A2540">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261124d">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="sg-page">
+<!-- HEADER:START · editar en _partials/header.html y correr _tools/sync-partials.mjs -->
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <div class="container header__inner">
+    <a class="brand" href="/" aria-label="Devsign, ir al inicio">
+      <img
+        class="brand__logo"
+        src="/assets/img/logo.webp"
+        alt="Devsign"
+        width="158"
+        height="53"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </a>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-nav-toggle
+    >
+      <span class="sr-only nav-toggle__label">Abrir menú</span>
+      <span class="nav-toggle__box" aria-hidden="true">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Principal" data-nav>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="/" data-nav-link>Inicio</a></li>
+        <li><a class="site-nav__link" href="/#casos" data-nav-link>Casos</a></li>
+        <li><a class="site-nav__link" href="/marketing/" data-nav-link>Marketing</a></li>
+        <li><a class="site-nav__link" href="/#contacto" data-nav-link>Contacto</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm" href="/#contacto">Hablemos</a>
+    </nav>
+  </div>
+</header>
+<!-- HEADER:END -->
+
+<main id="main">
+  <section class="section section--tight">
+    <div class="container">
+      <p class="eyebrow"><span class="eyebrow__dot"></span> Interno · no indexar</p>
+      <h1 style="margin-block: 1rem 0.75rem;">Sistema de diseño</h1>
+      <p class="lead">
+        Base visual y de componentes de la Etapa A. Esta página no se linkea desde el sitio
+        y no va en el sitemap. Sirve para revisar tokens, tipografía, estados y accesibilidad.
+      </p>
+
+      <nav class="sg-nav" aria-label="Secciones del sistema">
+        <a href="#color">Color</a>
+        <a href="#tipografia">Tipografía</a>
+        <a href="#botones">Botones</a>
+        <a href="#superficies">Tarjetas y placeholders</a>
+        <a href="#formulario">Formulario</a>
+        <a href="#dialogo">Diálogo</a>
+        <a href="#movimiento">Movimiento</a>
+      </nav>
+
+      <!-- COLOR -->
+      <section class="sg-block" id="color" aria-labelledby="color-title">
+        <h2 id="color-title">Color</h2>
+        <p class="sg-note" style="margin-block-end: 1.5rem;">
+          El cian y el verde se usan sobre fondos oscuros o como brillo. Nunca como texto chico sobre blanco.
+        </p>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch__color" style="background:#0057ff"></div><div class="swatch__meta"><b>Primario</b><code>#0057FF</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#1a73ff"></div><div class="swatch__meta"><b>Primario 2</b><code>#1A73FF</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#00c6ff"></div><div class="swatch__meta"><b>Cian</b><code>#00C6FF</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#0a2540"></div><div class="swatch__meta"><b>Navy</b><code>#0A2540</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#061529"></div><div class="swatch__meta"><b>Ink</b><code>#061529</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#f5f7fe"></div><div class="swatch__meta"><b>Paper</b><code>#F5F7FE</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#374151"></div><div class="swatch__meta"><b>Texto</b><code>#374151</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#22d3c8"></div><div class="swatch__meta"><b>Éxito</b><code>#22D3C8</code></div></div>
+          <div class="swatch"><div class="swatch__color" style="background:#8b5cf6"></div><div class="swatch__meta"><b>Violeta IA</b><code>#8B5CF6</code></div></div>
+        </div>
+      </section>
+
+      <!-- TIPOGRAFÍA -->
+      <section class="sg-block" id="tipografia" aria-labelledby="tipo-title">
+        <h2 id="tipo-title">Tipografía</h2>
+        <div class="sg-type">
+          <p class="sg-label">Display · Poppins 700</p>
+          <p class="display">O casi solo.</p>
+
+          <p class="sg-label" style="margin-block-start: 2rem;">H1 · Poppins 600</p>
+          <p class="h1">Tu negocio, ordenado.</p>
+
+          <p class="sg-label" style="margin-block-start: 2rem;">H2 · Poppins 600</p>
+          <p class="h2">El sistema detrás de la operación.</p>
+
+          <p class="sg-label" style="margin-block-start: 2rem;">H3 · Poppins 600</p>
+          <p class="h3">Sistemas de gestión y POS</p>
+
+          <p class="sg-label" style="margin-block-start: 2rem;">Lead</p>
+          <p class="lead">Diseñamos sistemas de gestión, automatizaciones y webs para negocios que ya no quieren depender del cuaderno.</p>
+
+          <p class="sg-label" style="margin-block-start: 2rem;">Cuerpo</p>
+          <p style="max-width: 62ch;">Respondemos por WhatsApp o por el formulario. Sin vueltas, sin propuestas de veinte páginas. El texto de cuerpo usa Poppins 400 con una altura de línea de 1.68 para que se lea cómodo en pantalla.</p>
+
+          <p class="sg-label" style="margin-block-start: 2rem;">Mono · etiquetas técnicas</p>
+          <p class="mono">Software · Automatización · Web</p>
+        </div>
+      </section>
+
+      <!-- BOTONES -->
+      <section class="sg-block" id="botones" aria-labelledby="botones-title">
+        <h2 id="botones-title">Botones</h2>
+        <p class="sg-label">Sobre fondo claro</p>
+        <div class="sg-row">
+          <a class="btn btn--primary" href="#botones">Primario</a>
+          <a class="btn btn--secondary" href="#botones">Secundario</a>
+          <a class="btn btn--ghost" href="#botones">
+            Terciario
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="section--dark" style="margin-block-start: 1.5rem; padding: 1.5rem; border-radius: 1rem;">
+          <p class="sg-label" style="color: #a7b6cd;">Sobre fondo oscuro</p>
+          <div class="sg-row">
+            <a class="btn btn--primary" href="#botones">Primario</a>
+            <a class="btn btn--secondary" href="#botones">Secundario</a>
+            <a class="btn btn--light" href="#botones">Claro</a>
+          </div>
+        </div>
+
+        <p class="sg-label" style="margin-block-start: 2rem;">Tamaños</p>
+        <div class="sg-row">
+          <a class="btn btn--primary btn--sm" href="#botones">Small</a>
+          <a class="btn btn--primary" href="#botones">Base</a>
+          <a class="btn btn--primary btn--lg" href="#botones">Large</a>
+        </div>
+      </section>
+
+      <!-- TARJETAS Y PLACEHOLDERS -->
+      <section class="sg-block" id="superficies" aria-labelledby="superficies-title">
+        <h2 id="superficies-title">Tarjetas y placeholders</h2>
+        <div class="sg-grid">
+          <article class="card">
+            <span class="tag">Caso</span>
+            <h3 style="margin-block: 0.8rem 0.4rem;">Role</h3>
+            <p class="muted" style="font-size: 0.9rem;">Sitio, sistema de gestión y app de repartos para una panadería de Monteros.</p>
+            <div class="ph ph--16x9" style="margin-block-start: 1rem;">captura 16:9</div>
+          </article>
+
+          <article class="card card--dark">
+            <span class="tag tag--dark">Producto</span>
+            <h3 style="margin-block: 0.8rem 0.4rem;">Qhatu</h3>
+            <p style="font-size: 0.9rem; color: #a7b6cd;">La guía local de Monteros, con POS y catálogo.</p>
+            <div class="ph ph--dark ph--4x3" style="margin-block-start: 1rem;">mockup 4:3</div>
+          </article>
+
+          <article class="card">
+            <span class="tag">Retrato</span>
+            <h3 style="margin-block: 0.8rem 0.4rem;">Equipo</h3>
+            <p class="muted" style="font-size: 0.9rem;">Foto vertical con tratamiento duotono azul.</p>
+            <div class="ph ph--3x4" style="margin-block-start: 1rem;">retrato 3:4</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- FORMULARIO -->
+      <section class="sg-block" id="formulario" aria-labelledby="form-title">
+        <h2 id="form-title">Formulario</h2>
+        <p class="sg-note" style="margin-block-end: 1.5rem;">
+          Estados base. La lógica condicional y el envío se conectan en la Etapa B.
+        </p>
+
+        <div class="form" style="max-width: 38rem;">
+          <div class="field">
+            <label class="field__label" for="sg-nombre">Nombre</label>
+            <input class="input" id="sg-nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name">
+          </div>
+
+          <fieldset class="field" style="border: 0; padding: 0; margin: 0;">
+            <legend class="field__label" style="margin-block-end: 0.5rem;">¿Qué necesitás?</legend>
+            <div class="choice-grid">
+              <label class="choice"><input type="radio" name="sg-interes" value="sistema"><span class="choice__dot"></span>Sistema / software</label>
+              <label class="choice"><input type="radio" name="sg-interes" value="ia"><span class="choice__dot"></span>Automatización / IA</label>
+              <label class="choice"><input type="radio" name="sg-interes" value="web"><span class="choice__dot"></span>Sitio web</label>
+              <label class="choice"><input type="radio" name="sg-interes" value="marketing"><span class="choice__dot"></span>Marketing / diseño</label>
+              <label class="choice"><input type="radio" name="sg-interes" value="nose"><span class="choice__dot"></span>No sé todavía</label>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="field__label" for="sg-mensaje">Mensaje</label>
+            <textarea class="textarea" id="sg-mensaje" name="mensaje" placeholder="Contanos en una línea qué querés resolver"></textarea>
+            <span class="field__hint">Sin compromiso. Si no sabés por dónde empezar, escribí igual.</span>
+          </div>
+
+          <div class="cluster">
+            <button class="btn btn--primary" type="button">Enviar consulta</button>
+            <span class="form__status muted">Estado del envío: pendiente de conexión.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIÁLOGO -->
+      <section class="sg-block" id="dialogo" aria-labelledby="dialogo-title">
+        <h2 id="dialogo-title">Diálogo</h2>
+        <p class="sg-note" style="margin-block-end: 1rem;">
+          Base para el lightbox del portfolio y para los reels. Usa <code>&lt;dialog&gt;</code>: foco atrapado, Escape y backdrop nativo.
+        </p>
+        <button class="btn btn--secondary" type="button" data-open-dialog>Abrir diálogo de prueba</button>
+
+        <dialog class="modal" id="sg-dialog" aria-labelledby="sg-dialog-title">
+          <div class="modal__head">
+            <h2 class="modal__title" id="sg-dialog-title">Título del diálogo</h2>
+            <button class="modal__close" type="button" data-close-dialog aria-label="Cerrar diálogo">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M6 6l12 12M18 6 6 18" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="modal__body">
+            <div class="ph ph--16x9">contenido del diálogo</div>
+            <p style="margin-block-start: 1rem;" class="muted">Acá va la imagen ampliada o el reel embebido.</p>
+          </div>
+        </dialog>
+      </section>
+
+      <!-- MOVIMIENTO -->
+      <section class="sg-block" id="movimiento" aria-labelledby="movimiento-title">
+        <h2 id="movimiento-title">Movimiento</h2>
+        <p class="sg-note" style="margin-block-end: 1.5rem;">
+          Los bloques entran con 18 px de desplazamiento y opacidad, una sola vez, con stagger de 70 ms.
+          Con <code>prefers-reduced-motion</code> aparecen directamente. Sin JS, también.
+        </p>
+        <div class="sg-grid" data-reveal-group>
+          <div class="card" data-reveal>Bloque 01</div>
+          <div class="card" data-reveal>Bloque 02</div>
+          <div class="card" data-reveal>Bloque 03</div>
+        </div>
+      </section>
+
+      <section class="sg-block" aria-labelledby="notas-title">
+        <h2 id="notas-title">Notas de uso</h2>
+        <ul class="sg-note" style="display: grid; gap: 0.6rem; padding-inline-start: 1.2rem;">
+          <li>Un solo <code>h1</code> por página. Las secciones usan <code>h2</code>.</li>
+          <li>Todo control interactivo tiene foco visible y área de 44 px como mínimo.</li>
+          <li>Las imágenes llevan <code>width</code>, <code>height</code> y <code>alt</code> descriptivo. Las decorativas, <code>alt=""</code>.</li>
+          <li>El cian y el verde no se usan como texto sobre blanco.</li>
+          <li>Los placeholders no se publican: se reemplazan por los archivos de <code>assets/img/PENDIENTES.md</code>.</li>
+        </ul>
+      </section>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER:START · editar en _partials/footer.html y correr _tools/sync-partials.mjs -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/" aria-label="Devsign, ir al inicio">
+          <img
+            class="footer__logo"
+            src="/assets/img/logo.webp"
+            alt="Devsign"
+            width="156"
+            height="53"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+        <p>
+          Sistemas, automatizaciones y webs para negocios de Monteros y Tucumán.
+          Diseñamos la operación, no solo la vidriera.
+        </p>
+        <ul class="social">
+          <li>
+            <a href="https://wa.me/5493863515328" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Devsign">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M20 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4A8.4 8.4 0 1 1 20 11.6Z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.8 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.4.4l.6 1.4c.1.2 0 .4-.1.6l-.5.6c.5.9 1.2 1.6 2.1 2.1l.6-.6c.2-.1.4-.2.6-.1l1.4.6c.3.1.4.2.4.5v.5c0 .3-.1.6-.4.8-.5.4-1.2.6-1.9.5-3-.5-5.3-2.8-5.8-5.8-.1-.6 0-1.2.4-1.6Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/devsign.ar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Devsign">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100047006755167" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Devsign">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M14.5 8.5h2V5.5h-2c-2.2 0-3.5 1.4-3.5 3.6v2H9v3h2v6h3v-6h2.3l.5-3H14V9.4c0-.6.2-.9.5-.9Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Navegación</h2>
+        <ul class="footer__list">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/#casos">Casos</a></li>
+          <li><a href="/#proceso">Proceso</a></li>
+          <li><a href="/marketing/">Marketing y diseño</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+          <li><a href="https://qhatu.devsign.ar/" target="_blank" rel="noopener noreferrer">Qhatu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Qué hacemos</h2>
+        <ul class="footer__list">
+          <li><span>Sistemas de gestión y POS</span></li>
+          <li><span>Automatización y agentes de IA</span></li>
+          <li><span>Webs y plataformas</span></li>
+          <li><span>Marketing y diseño</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li><a href="https://wa.me/5493863515328" target="_blank" rel="noopener noreferrer">+54 9 3863 515 328</a></li>
+          <li><a href="mailto:admin@devsign.ar">admin@devsign.ar</a></li>
+          <li><a href="https://www.instagram.com/devsign.ar/" target="_blank" rel="noopener noreferrer">@devsign.ar</a></li>
+          <li><span>Monteros, Tucumán</span></li>
+          <li><span>Argentina</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Devsign. Todos los derechos reservados.</p>
+      <div class="footer__legal">
+        <a href="/#contacto">Trabajemos juntos</a>
+        <a href="#top">Volver arriba</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER:END -->
+
+<script>
+  (() => {
+    const dialog = document.getElementById("sg-dialog");
+    if (!dialog) return;
+    document.querySelectorAll("[data-open-dialog]").forEach((button) => {
+      button.addEventListener("click", () => dialog.showModal());
+    });
+    dialog.querySelector("[data-close-dialog]").addEventListener("click", () => dialog.close());
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+  })();
+</script>
+<script src="/assets/js/main.js?v=20261124d" defer></script>
+</body>
+</html>

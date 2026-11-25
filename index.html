@@ -1,1016 +1,1293 @@
 <!doctype html>
-<html>
-
+<html lang="es-AR" id="top">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-    <title>Somos DevSign</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-slider.min.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Devsign — Sistemas, IA, webs, invitaciones y diseño | Monteros, Tucumán</title>
+  <meta name="description" content="Sistemas de gestión y POS, agentes de IA para WhatsApp, sitios web, invitaciones digitales e identidad de marca en Monteros y Tucumán.">
+  <link rel="canonical" href="https://devsign.ar/">
+  <meta name="theme-color" content="#0A2540">
+  <meta name="color-scheme" content="light">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Devsign">
+  <meta property="og:title" content="Devsign — Sistemas, IA, webs, invitaciones y diseño">
+  <meta property="og:description" content="Sistemas de gestión, automatizaciones con IA, webs, invitaciones digitales y marketing para negocios de Monteros y Tucumán.">
+  <meta property="og:url" content="https://devsign.ar/">
+  <meta property="og:image" content="https://devsign.ar/assets/img/og/og-default.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Devsign — Sistemas, automatización y webs para negocios">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Devsign — Sistemas, IA, webs, invitaciones y diseño">
+  <meta name="twitter:description" content="Sistemas de gestión, automatizaciones con IA, webs, invitaciones digitales y marketing en Monteros y Tucumán.">
+  <meta name="twitter:image" content="https://devsign.ar/assets/img/og/og-default.png">
+
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+
+  <link rel="preload" href="/assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/styles.css?v=20261124d">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://devsign.ar/#organizacion",
+        "name": "Devsign",
+        "url": "https://devsign.ar/",
+        "logo": "https://devsign.ar/assets/img/logo.webp",
+        "telephone": "+54-9-3863-515-328",
+        "description": "Agencia de software, automatización con IA, invitaciones digitales y diseño en Monteros, Tucumán.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Monteros",
+          "addressRegion": "Tucumán",
+          "addressCountry": "AR"
+        },
+        "areaServed": ["Monteros", "Tucumán", "Argentina"],
+        "sameAs": [
+          "https://www.instagram.com/devsign.ar/",
+          "https://www.facebook.com/profile.php?id=100047006755167"
+        ],
+        "founder": [
+          { "@type": "Person", "name": "David Lazarte" },
+          { "@type": "Person", "name": "Giuliano Carbone" }
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://devsign.ar/#sitio",
+        "url": "https://devsign.ar/",
+        "name": "Devsign",
+        "inLanguage": "es-AR",
+        "publisher": { "@id": "https://devsign.ar/#organizacion" }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://devsign.ar/#servicio-sistemas",
+        "name": "Sistemas de gestión a medida, POS, agentes de IA, invitaciones digitales y diseño",
+        "provider": { "@id": "https://devsign.ar/#organizacion" },
+        "areaServed": ["Monteros", "Tucumán", "Argentina"],
+        "description": "Desarrollo de sistemas de gestión, puntos de venta (POS), agentes de WhatsApp con inteligencia artificial, plataformas web, invitaciones digitales e identidad de marca."
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
-    <div id="header-holder" class="main-header">
-        <div class="bg-animation">
-            <div class="graphic-show">
-                <img class="fix-size" src="images/graphic1.png" alt="">
-                <img class="img img1" src="images/graphic1.png" alt="">
-                <img class="img img2" src="images/graphic2.png" alt="">
-                <img class="img img3" src="images/graphic3.png" alt="">
-            </div>
-        </div>
-        <nav id="nav" class="navbar navbar-default navbar-full">
-            <div class="container-fluid">
-                <div class="container container-nav">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="navbar-header">
-                                <button aria-expanded="false" type="button" class="navbar-toggle collapsed"
-                                    data-toggle="collapse" data-target="#bs">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                <a class="logo-holder" href="index.html">
-                                    <div class="logo" style="width:180px;height:48px"></div>
-                                </a>
-                            </div>
-                            <div style="height: 1px;" role="main" aria-expanded="false" class="navbar-collapse collapse"
-                                id="bs">
-                                <ul class="nav navbar-nav navbar-right">
-                                    <li><a href="index.html">Inicio</a></li>
-                                    <li class="dropdown">
-                                        <!-- <i class="fas fa-caret-down"></i> -->
-                                        <a href="#about">Quienes Somos</a>
-                                        <!-- <ul class="dropdown-menu">
-                                            <li><a href="about.html">Agencia</a></li>
-                                            <!-- <li><a href="blog.html">Blog</a></li> -->
-                                            <!-- <li><a href="domains.html">Proyectos</a></li> -->
-                                            <!-- <li><a href="ourservers.html">Servers</a></li>
-                                      <li><a href="mapdata.html">Map Generator</a></li>
-                                      <li><a href="horizontalpricing.html">Horizontal Pricing</a></li> -->
-                                        <!-- </ul> -->
-                                    </li>
-                                    <li class="dropdown unity-menu">
-                                        <a href="#services">Servicios </a>
-                                        <!-- <ul class="dropdown-menu dropdown-unity">
-                                            <li>
-                                                <a class="unity-link" href="webhosting.html">
-                                                    <div class="unity-box">
-                                                        <div class="unity-icon">
-                                                            <img src="images/service-icon1.svg" alt="">
-                                                        </div>
-                                                        <div class="unity-title">
-                                                            Diseño y desarrollo web
-                                                        </div>
-                                                        <div class="unity-details">
-                                                            Diseño grafico y redes sociales
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="unity-link" href="resellershosting.html">
-                                                    <div class="unity-box">
-                                                        <div class="unity-icon">
-                                                            <img src="images/service-icon2.svg" alt="">
-                                                        </div>
-                                                        <div class="unity-title">
-                                                            Hosting y mantenimiento
-                                                        </div>
-                                                        <div class="unity-details">
-                                                            Money on the side!
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="unity-link" href="cloudhosting.html">
-                                                    <div class="unity-box">
-                                                        <div class="unity-icon">
-                                                            <img src="images/service-icon3.svg" alt="">
-                                                        </div>
-                                                        <div class="unity-title">
-                                                            Cloud Hosting
-                                                        </div>
-                                                        <div class="unity-details">
-                                                            Fast as rocket
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="unity-link" href="vpshosting.html">
-                                                    <div class="unity-box">
-                                                        <div class="unity-icon">
-                                                            <img src="images/service-icon4.svg" alt="">
-                                                        </div>
-                                                        <div class="unity-title">
-                                                            VPS Servers
-                                                        </div>
-                                                        <div class="unity-details">
-                                                            Scalable hosting
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul> -->
-                                    </li>
+<!-- HEADER:START · editar en _partials/header.html y correr _tools/sync-partials.mjs -->
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <div class="container header__inner">
+    <a class="brand" href="/" aria-label="Devsign, ir al inicio">
+      <img
+        class="brand__logo"
+        src="/assets/img/logo.webp"
+        alt="Devsign"
+        width="158"
+        height="53"
+        fetchpriority="high"
+        decoding="async"
+      />
+    </a>
 
-                                    <!-- <li><a href="https://brandio.io/envato/whmcs/index.php?systpl=hostify">WHMCS</a></li> -->
-                                    <li><a href="https://walink.co/b48653">Contacto</a></li>
-                                    <!-- <li><a class="login-button" href="signin.html">Login</a></li> -->
-                                    <!-- <li class="support-button-holder support-dropdown">
-                                        <a class="support-button" href="#">Soporte</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#"><i class="fas fa-phone"></i>Toll-Free 08-197-435-01</a></li>
-                                            <li><a href="#"><i class="fas fa-comments"></i>Start a Live Chat</a></li>
-                                            <li><a href="#"><i class="fas fa-ticket-alt"></i>Open a ticket</a></li>
-                                            <li><a href="#"><i class="fas fa-book"></i>Knowledge base</a></li>
-                                        </ul>
-                                    </li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <button
+      class="nav-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="site-nav"
+      data-nav-toggle
+    >
+      <span class="sr-only nav-toggle__label">Abrir menú</span>
+      <span class="nav-toggle__box" aria-hidden="true">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Principal" data-nav>
+      <ul class="site-nav__list">
+        <li><a class="site-nav__link" href="/" data-nav-link>Inicio</a></li>
+        <li><a class="site-nav__link" href="/#casos" data-nav-link>Casos</a></li>
+        <li><a class="site-nav__link" href="/marketing/" data-nav-link>Marketing</a></li>
+        <li><a class="site-nav__link" href="/#contacto" data-nav-link>Contacto</a></li>
+      </ul>
+      <a class="btn btn--primary btn--sm" href="/#contacto">Hablemos</a>
+    </nav>
+  </div>
+</header>
+<!-- HEADER:END -->
+
+<main id="main">
+  <!-- HERO / slider de portada con los 4 textos aprobados -->
+  <section class="hero" aria-labelledby="hero-title" data-hero>
+    <div class="container hero__inner">
+      <div class="hero__stage" data-hero-stage>
+        <article class="hero__slide is-active" id="hero-slide-1" data-hero-slide role="group" aria-roledescription="diapositiva" aria-label="1 de 4">
+          <p class="hero__eyebrow">Devsign · Monteros, Tucumán</p>
+          <h1 class="hero__title" id="hero-title">Ideas que se convierten en soluciones.</h1>
+          <p class="hero__lead">Somos un estudio de desarrollo y diseño que digitaliza negocios reales: sistemas, automatización, web y marca, con gente de acá y trato directo.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contacto" data-interes="general">
+              Contanos tu idea
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="#casos">Ver lo que construimos</a>
+          </div>
+        </article>
+
+        <article class="hero__slide" id="hero-slide-2" data-hero-slide role="group" aria-roledescription="diapositiva" aria-label="2 de 4" aria-hidden="true" inert>
+          <p class="hero__eyebrow">Sistemas a medida</p>
+          <h2 class="hero__title">Tu negocio ordenado en un solo sistema.</h2>
+          <p class="hero__lead">Ventas, stock, turnos, socios, repartos. Lo diseñamos a la medida de cómo trabajás vos, no al revés.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contacto" data-interes="sistemas">
+              Quiero mi sistema
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="#casos">Ver casos reales</a>
+          </div>
+        </article>
+
+        <article class="hero__slide" id="hero-slide-3" data-hero-slide role="group" aria-roledescription="diapositiva" aria-label="3 de 4" aria-hidden="true" inert>
+          <p class="hero__eyebrow">Automatización e IA</p>
+          <h2 class="hero__title">Menos tareas repetitivas. Más tiempo para vender.</h2>
+          <p class="hero__lead">Agentes de WhatsApp que atienden las 24 horas, recordatorios automáticos y procesos que corren solos mientras vos estás en otra cosa.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contacto" data-interes="automatizacion">
+              Automatizar mi negocio
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="#proceso">Cómo funciona</a>
+          </div>
+        </article>
+
+        <article class="hero__slide" id="hero-slide-4" data-hero-slide role="group" aria-roledescription="diapositiva" aria-label="4 de 4" aria-hidden="true" inert>
+          <p class="hero__eyebrow">Marketing, diseño y web</p>
+          <h2 class="hero__title">Que te encuentren, te entiendan y te elijan.</h2>
+          <p class="hero__lead">Sitios web rápidos, identidad visual, contenido, manejo de redes e invitaciones digitales pensados para que tu marca se vea profesional todos los días.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#contacto" data-interes="marketing">
+              Mejorar mi presencia
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="btn btn--secondary btn--lg" href="/marketing/">Ver trabajos de diseño</a>
+          </div>
+        </article>
+      </div>
+
+      <aside class="hero__aside" aria-label="Capítulos de portada">
+        <ol class="hero__rail" role="list">
+          <li>
+            <button class="hero__chapter" type="button" data-hero-chapter aria-controls="hero-slide-1" aria-current="true">
+              <span class="hero__chapter-num">01</span>
+              <span class="hero__chapter-label">Quiénes somos</span>
+            </button>
+          </li>
+          <li>
+            <button class="hero__chapter" type="button" data-hero-chapter aria-controls="hero-slide-2">
+              <span class="hero__chapter-num">02</span>
+              <span class="hero__chapter-label">Sistemas y POS</span>
+            </button>
+          </li>
+          <li>
+            <button class="hero__chapter" type="button" data-hero-chapter aria-controls="hero-slide-3">
+              <span class="hero__chapter-num">03</span>
+              <span class="hero__chapter-label">Automatización e IA</span>
+            </button>
+          </li>
+          <li>
+            <button class="hero__chapter" type="button" data-hero-chapter aria-controls="hero-slide-4">
+              <span class="hero__chapter-num">04</span>
+              <span class="hero__chapter-label">Marketing y diseño</span>
+            </button>
+          </li>
+        </ol>
+
+        <div class="hero__footer">
+          <div class="hero__progress" aria-hidden="true">
+            <span class="hero__progress-fill" data-hero-bar></span>
+          </div>
+
+          <div class="hero__controls">
+            <p class="hero__counter" aria-live="off">
+              <span class="hero__counter-current" data-hero-current>01</span>
+              <span class="hero__counter-sep" aria-hidden="true">/</span>
+              <span>04</span>
+            </p>
+
+            <div class="hero__arrows">
+              <button class="hero__arrow" type="button" data-hero-prev aria-label="Diapositiva anterior">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+              <button class="hero__arrow" type="button" data-hero-next aria-label="Siguiente diapositiva">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
-        </nav>
-        <div id="top-content" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="main-slider">
-                            <div class="slide">
-                                <div class="noti-holder">
-                                    <a href="#services">
-                                        <div class="noti">
-                                            <span class="badge">New</span><span class="text">Comenzamos el año agregando
-                                                nuevos servicios</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="spacer"></div>
-                                <div class="big-title">Libera Tu Tiempo <span>Enfócate en Tus Servicios</span></div>
-                                <p>Deja que Devsign Maneje lo Digital, Mientras Tú te Concentras en Brindar tus Mejores
-                                    Servicios.</p>
-                                <div class="btn-holder">
-                                    <!-- <a href="signup.html" class="ybtn ybtn-header-color">Register</a> -->
-                                    <a href="https://walink.co/b48653" class="ybtn ybtn-white ybtn-shadow"
-                                        target="_blank">¿Como
-                                        podemos
-                                        ayudarte?</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img class="header-graphic" src="images/graphic1.png" alt="" />
-                    </div>
-                </div>
-            </div>
+
+            <button class="hero__pause" type="button" data-hero-pause aria-pressed="false" aria-label="Pausar o reanudar carrusel">
+              <svg class="hero__pause-icon hero__pause-icon--pause" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                <rect x="7" y="5" width="3.5" height="14" rx="1"/>
+                <rect x="13.5" y="5" width="3.5" height="14" rx="1"/>
+              </svg>
+              <svg class="hero__pause-icon hero__pause-icon--play" viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+                <path d="M8 5.5v13l10-6.5-10-6.5Z"/>
+              </svg>
+              <span data-hero-pause-label>Pausar</span>
+            </button>
+          </div>
         </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- CLIENTES MARQUEE -->
+  <section class="marquee marquee--blue" data-marquee aria-labelledby="marquee-title">
+    <div class="container marquee__inner">
+      <div class="marquee__head">
+        <p class="marquee__title" id="marquee-title">
+          <span class="marquee__kicker">Confianza local</span>
+          <strong>Corriendo todos los días</strong> en negocios e instituciones de Monteros y Tucumán
+        </p>
+      </div>
+
+      <div class="marquee__viewport">
+        <div class="marquee__track">
+          <ul class="marquee__group" role="list">
+            <li class="marquee__item"><div class="marquee__circle" title="Role Panadería"><img src="/assets/img/logos/opt/role.webp" alt="Role Panadería" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Instituto Omega"><img src="/assets/img/logos/opt/omega.webp" alt="Instituto Omega" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Qhatu"><img src="/assets/img/logos/opt/qhatu.webp" alt="Qhatu" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Polaris Consultora"><img src="/assets/img/logos/opt/polaris.webp" alt="Polaris Consultora" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="UCIM Monteros"><img src="/assets/img/logos/opt/ucim.webp" alt="UCIM Monteros" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Club Ñuñorco"><img src="/assets/img/logos/opt/nunorco.webp" alt="Club Ñuñorco" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="DPC Salud"><img src="/assets/img/logos/opt/dpc.webp" alt="DPC Salud" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Skill Fitness"><img src="/assets/img/logos/opt/skillfitness.webp" alt="Skill Fitness" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Be Strong Fitness"><img src="/assets/img/logos/opt/bestrong.webp" alt="Be Strong Fitness" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="JC Refrigeraciones"><img src="/assets/img/logos/opt/jc.webp" alt="JC Refrigeraciones" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="AM"><img src="/assets/img/logos/opt/am.webp" alt="AM" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Maritte"><img src="/assets/img/logos/opt/maritte.webp" alt="Maritte" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Rosso"><img src="/assets/img/logos/opt/rosso.webp" alt="Rosso" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="SOEM Monteros"><img src="/assets/img/logos/opt/soem.webp" alt="SOEM Monteros" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Vértice"><img src="/assets/img/logos/opt/vertice.webp" alt="Vértice" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Cocodrilos Camping"><img src="/assets/img/logos/opt/cocodriloscamping.webp" alt="Cocodrilos Camping" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Los Sosa"><img src="/assets/img/logos/opt/lossosa.webp" alt="Los Sosa" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle" title="Fega"><img src="/assets/img/logos/opt/fega.webp" alt="Fega" width="160" height="60" loading="lazy" decoding="async"></div></li>
+          </ul>
+          <ul class="marquee__group" role="list" aria-hidden="true">
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/role.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/omega.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/qhatu.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/polaris.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/ucim.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/nunorco.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/dpc.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/skillfitness.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/bestrong.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/jc.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/am.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/maritte.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/rosso.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/soem.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/vertice.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/cocodriloscamping.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/lossosa.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+            <li class="marquee__item"><div class="marquee__circle"><img src="/assets/img/logos/opt/fega.webp" alt="" width="160" height="60" loading="lazy" decoding="async"></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUÉ RESOLVEMOS · Grilla Bento arquitectónica de 4 pilares (estilo UCIM) -->
+  <section class="section section--paper services" id="soluciones" aria-labelledby="soluciones-title">
+    <div class="container">
+      <div class="services__head" data-reveal-group>
+        <div class="services__head-main">
+          <p class="services__kicker" data-reveal>Qué resolvemos</p>
+          <h2 class="services__title" id="soluciones-title" data-reveal>
+            Cuatro áreas que trabajan conectadas.
+          </h2>
+        </div>
+        <p class="services__lead" data-reveal>
+          Desde el sistema que ordena la caja y el reparto hasta el agente de IA que contesta
+          WhatsApp o la identidad visual de tu marca.
+        </p>
+      </div>
+
+      <div class="bento-services" data-reveal-group>
+        <!-- Pilar 1: Sistemas y POS -->
+        <article class="bento-service bento-service--blue" data-reveal>
+          <div>
+            <div class="bento-service__top">
+              <div class="bento-service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <rect x="3" y="3" width="7" height="9" rx="1.5"/>
+                  <rect x="14" y="3" width="7" height="5" rx="1.5"/>
+                  <rect x="14" y="12" width="7" height="9" rx="1.5"/>
+                  <rect x="3" y="16" width="7" height="5" rx="1.5"/>
+                </svg>
+              </div>
+              <span class="bento-service__badge">Software a medida</span>
+            </div>
+            <h3 class="bento-service__title">Sistemas de gestión y POS</h3>
+            <p class="bento-service__text">
+              Ventas de mostrador, stock, turnos, socios y hojas de reparto en un sistema diseñado con la lógica real de tu negocio.
+            </p>
+            <ul class="bento-service__tags" role="list">
+              <li>POS y cierre de caja</li>
+              <li>Control de producción y stock</li>
+              <li>Apps de reparto y padrón de socios</li>
+            </ul>
+          </div>
+          <a class="bento-service__cta" href="#contacto" data-interes="sistemas">
+            <span>Quiero mi sistema</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Pilar 2: Automatización e IA -->
+        <article class="bento-service bento-service--violet" data-reveal>
+          <div>
+            <div class="bento-service__top">
+              <div class="bento-service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <path d="M12 2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/>
+                  <rect x="4" y="8" width="16" height="12" rx="3"/>
+                  <circle cx="9" cy="14" r="1.5" fill="currentColor"/>
+                  <circle cx="15" cy="14" r="1.5" fill="currentColor"/>
+                  <path d="M9 18h6"/>
+                </svg>
+              </div>
+              <span class="bento-service__badge">Atención 24/7</span>
+            </div>
+            <h3 class="bento-service__title">Automatización y agentes de IA</h3>
+            <p class="bento-service__text">
+              Agentes en WhatsApp entrenados para tu negocio: responden consultas, pasan aranceles, agendan turnos y preinscriben clientes.
+            </p>
+            <ul class="bento-service__tags" role="list">
+              <li>Asistente IA en WhatsApp</li>
+              <li>Recordatorios de turnos y cuotas</li>
+              <li>Conexión directa a tu sistema</li>
+            </ul>
+          </div>
+          <a class="bento-service__cta" href="#contacto" data-interes="automatizacion">
+            <span>Automatizar mi atención</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Pilar 3: Webs e Invitaciones Digitales -->
+        <article class="bento-service bento-service--cyan" data-reveal>
+          <div>
+            <div class="bento-service__top">
+              <div class="bento-service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <rect x="2" y="3" width="20" height="15" rx="2"/>
+                  <path d="M2 9h20"/>
+                  <circle cx="5" cy="6" r=".8" fill="currentColor"/>
+                  <circle cx="8" cy="6" r=".8" fill="currentColor"/>
+                  <path d="M8 21h8M12 18v3"/>
+                </svg>
+              </div>
+              <span class="bento-service__badge">Webs &amp; Eventos</span>
+            </div>
+            <h3 class="bento-service__title">Sitios web e invitaciones digitales</h3>
+            <p class="bento-service__text">
+              Portales institucionales, catálogos rápidos y tarjetas web interactivas para casamientos, 15 años y eventos.
+            </p>
+            <ul class="bento-service__tags" role="list">
+              <li>Webs institucionales y catálogos</li>
+              <li>Portales autogestionables</li>
+              <li>Invitaciones web con RSVP y GPS</li>
+            </ul>
+          </div>
+          <a class="bento-service__cta" href="#invitaciones">
+            <span>Ver invitaciones y webs</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Pilar 4: Marketing, Identidad y Redes -->
+        <article class="bento-service bento-service--emerald" data-reveal>
+          <div>
+            <div class="bento-service__top">
+              <div class="bento-service__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9">
+                  <path d="M12 2C6.5 2 2 6.5 2 12c0 3.6 2 6 5 6 1 0 1.5-.5 2-.5s1.5.5 2 .5c3.5 0 7-3.5 7-8 0-4.4-2.7-8-6-8z"/>
+                  <circle cx="7.5" cy="8.5" r="1.2" fill="currentColor"/>
+                  <circle cx="12" cy="6.5" r="1.2" fill="currentColor"/>
+                  <circle cx="16.5" cy="8.5" r="1.2" fill="currentColor"/>
+                  <circle cx="8" cy="13" r="1.2" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="bento-service__badge">Estudio creativo</span>
+            </div>
+            <h3 class="bento-service__title">Marketing, identidad y redes</h3>
+            <p class="bento-service__text">
+              Diseño de logos, manuales de marca, producción de reels y manejo integral de Instagram y Facebook.
+            </p>
+            <ul class="bento-service__tags" role="list">
+              <li>Identidad y manual de marca</li>
+              <li>Grabación y edición de Reels</li>
+              <li>Gestión de redes y cartelería</li>
+            </ul>
+          </div>
+          <a class="bento-service__cta" href="/marketing/">
+            <span>Explorar Marketing</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASOS DE ÉXITO INTERACTIVOS (Con selector por pestañas + testimonio integrado) -->
+  <section class="section cases" id="casos" aria-labelledby="casos-title" data-cases>
+    <div class="container">
+      <div class="cases__top" data-reveal-group>
+        <div>
+          <p class="kicker" data-reveal>Casos de éxito</p>
+          <h2 class="cases__title" id="casos-title" data-reveal>Sistemas y plataformas trabajando hoy.</h2>
+        </div>
+
+        <!-- Tabs selector para evitar scroll largo -->
+        <div class="cases__tabs" role="tablist" aria-label="Seleccionar caso de éxito" data-reveal>
+          <button class="cases__tab is-active" type="button" role="tab" aria-selected="true" aria-controls="case-panel-role" id="case-tab-role" data-case-tab="role">
+            <span class="cases__tab-dot"></span>
+            Role Panadería
+          </button>
+          <button class="cases__tab" type="button" role="tab" aria-selected="false" aria-controls="case-panel-omega" id="case-tab-omega" data-case-tab="omega">
+            <span class="cases__tab-dot"></span>
+            Instituto Omega
+          </button>
+          <button class="cases__tab" type="button" role="tab" aria-selected="false" aria-controls="case-panel-ucim" id="case-tab-ucim" data-case-tab="ucim">
+            <span class="cases__tab-dot"></span>
+            UCIM Monteros
+          </button>
+          <button class="cases__tab" type="button" role="tab" aria-selected="false" aria-controls="case-panel-otros" id="case-tab-otros" data-case-tab="otros">
+            <span class="cases__tab-dot"></span>
+            Polaris · Ñuñorco · DPC
+          </button>
+        </div>
+      </div>
+
+      <!-- Panel 1: Role -->
+      <article class="case-panel is-active" id="case-panel-role" role="tabpanel" aria-labelledby="case-tab-role" data-case-panel="role">
+        <div class="case__media">
+          <div class="shot shot--browser" data-shot-switcher>
+            <div class="shot__top">
+              <div class="shot__top-left">
+                <div class="shot__top-dots" aria-hidden="true">
+                  <span class="shot__top-dot"></span><span class="shot__top-dot"></span><span class="shot__top-dot"></span>
+                </div>
+                <span class="shot__top-title">role.com.ar · Panadería y Pastelería</span>
+              </div>
+              <div class="shot__toggle" role="group" aria-label="Cambiar captura de Role">
+                <button class="shot__btn is-active" type="button" data-shot-toggle="site" aria-pressed="true">Web pública</button>
+                <button class="shot__btn" type="button" data-shot-toggle="system" aria-pressed="false">Sistema &amp; App</button>
+              </div>
+            </div>
+            <div class="shot__screen--img">
+              <img class="shot__view is-active" data-shot-view="site" src="/assets/img/casos/role.webp" alt="Sitio web de Panadería Role" width="1904" height="957" loading="lazy" decoding="async">
+              <img class="shot__view" data-shot-view="system" src="/assets/img/casos/role2.webp" alt="Sistema de producción y pedidos de Panadería Role" width="1919" height="949" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+        <div class="case__body">
+          <p class="case__meta"><span>Panadería y Pastelería · Monteros</span><span aria-hidden="true">·</span><span>Web + Gestión + App</span></p>
+          <h3 class="case__title">Role</h3>
+          <p class="case__text">
+            Sitio web propio, control de producción diaria y aplicación móvil para los repartidores.
+            El pedido se carga una sola vez: de ahí sale la orden de horneado, la hoja de ruta y el cierre de caja.
+          </p>
+          <blockquote class="case__quote">
+            <p>"Pasamos de cruzar tres planillas a tener el pedido, el horneado y el reparto en un mismo sistema."</p>
+            <cite>Impacto en la operación diaria · Panadería Role</cite>
+          </blockquote>
+          <ul class="case__tags" role="list">
+            <li>Sitio web</li>
+            <li>Control de producción</li>
+            <li>App móvil de repartos</li>
+          </ul>
+          <div class="case__actions">
+            <a class="btn btn--primary btn--sm" href="#contacto" data-interes="sistemas">Quiero un sistema así</a>
+            <a class="case__ext" href="https://role.com.ar/" target="_blank" rel="noopener noreferrer">Visitar role.com.ar ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 2: Instituto Omega -->
+      <article class="case-panel" id="case-panel-omega" role="tabpanel" aria-labelledby="case-tab-omega" data-case-panel="omega" hidden>
+        <div class="case__media">
+          <div class="shot shot--browser" data-shot-switcher>
+            <div class="shot__top">
+              <div class="shot__top-left">
+                <div class="shot__top-dots" aria-hidden="true">
+                  <span class="shot__top-dot"></span><span class="shot__top-dot"></span><span class="shot__top-dot"></span>
+                </div>
+                <span class="shot__top-title">institutoomega.com.ar · Cursos y Admisiones</span>
+              </div>
+              <div class="shot__toggle" role="group" aria-label="Cambiar captura de Omega">
+                <button class="shot__btn is-active" type="button" data-shot-toggle="site" aria-pressed="true">Web cursos</button>
+                <button class="shot__btn" type="button" data-shot-toggle="system" aria-pressed="false">Sistema &amp; IA</button>
+              </div>
+            </div>
+            <div class="shot__screen--img">
+              <img class="shot__view is-active" data-shot-view="site" src="/assets/img/casos/omega.webp" alt="Sitio web de cursos de Instituto Omega" width="1898" height="943" loading="lazy" decoding="async">
+              <img class="shot__view" data-shot-view="system" src="/assets/img/casos/omega2.webp" alt="Sistema de admisiones y legajos de Instituto Omega" width="1923" height="947" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+        <div class="case__body">
+          <p class="case__meta"><span>Educación · Monteros</span><span aria-hidden="true">·</span><span>Agente IA + Sistema de Alumnos</span></p>
+          <h3 class="case__title">Instituto Omega</h3>
+          <p class="case__text">
+            Agente de WhatsApp con inteligencia artificial que responde consultas sobre cursos, horarios
+            y aranceles a cualquier hora, conectado al sistema de gestión de alumnos, asistencias y cuotas.
+          </p>
+          <blockquote class="case__quote">
+            <p>"El agente responde las dudas frecuentes en el acto y la secretaría recibe al alumno ya preinscripto."</p>
+            <cite>Automatización de admisiones · Instituto Omega</cite>
+          </blockquote>
+          <ul class="case__tags" role="list">
+            <li>Agente de WhatsApp con IA</li>
+            <li>Gestión de legajos y cuotas</li>
+            <li>Sitio web de cursos</li>
+          </ul>
+          <div class="case__actions">
+            <a class="btn btn--primary btn--sm" href="#contacto" data-interes="automatizacion">Quiero automatizar con IA</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 3: UCIM -->
+      <article class="case-panel" id="case-panel-ucim" role="tabpanel" aria-labelledby="case-tab-ucim" data-case-panel="ucim" hidden>
+        <div class="case__media">
+          <div class="shot shot--browser" data-shot-switcher>
+            <div class="shot__top">
+              <div class="shot__top-left">
+                <div class="shot__top-dots" aria-hidden="true">
+                  <span class="shot__top-dot"></span><span class="shot__top-dot"></span><span class="shot__top-dot"></span>
+                </div>
+                <span class="shot__top-title">ucim.devsign.ar · Institucional y Socios</span>
+              </div>
+              <div class="shot__toggle" role="group" aria-label="Cambiar captura de UCIM">
+                <button class="shot__btn is-active" type="button" data-shot-toggle="site" aria-pressed="true">Portal web</button>
+                <button class="shot__btn" type="button" data-shot-toggle="system" aria-pressed="false">Panel socios &amp; caja</button>
+              </div>
+            </div>
+            <div class="shot__screen--img">
+              <img class="shot__view is-active" data-shot-view="site" src="/assets/img/casos/ucim1.webp" alt="Portal institucional de UCIM Monteros" width="1907" height="955" loading="lazy" decoding="async">
+              <img class="shot__view" data-shot-view="system" src="/assets/img/casos/ucim2.webp" alt="Panel de gestión de socios y cuotas de UCIM" width="1919" height="956" loading="lazy" decoding="async">
+            </div>
+          </div>
+        </div>
+        <div class="case__body">
+          <p class="case__meta"><span>Institución Gremial Empresaria · Monteros</span><span aria-hidden="true">·</span><span>Portal + Sistema + App</span></p>
+          <h3 class="case__title">UCIM</h3>
+          <p class="case__text">
+            Rediseño integral del portal de la Unión Comercial e Industrial de Monteros junto con su
+            sistema administrativo de padrón de socios, cobro de cuotas, reportes de caja y Club de Beneficios.
+          </p>
+          <blockquote class="case__quote">
+            <p>"Una plataforma institucional moderna que refleja más de 70 años de historia y ordena la administración diaria."</p>
+            <cite>Digitalización institucional · UCIM Monteros</cite>
+          </blockquote>
+          <ul class="case__tags" role="list">
+            <li>Portal institucional</li>
+            <li>Sistema de socios y caja</li>
+            <li>Club de beneficios</li>
+          </ul>
+          <div class="case__actions">
+            <a class="btn btn--primary btn--sm" href="#contacto" data-interes="sistemas">Consultar por un sistema</a>
+            <a class="case__ext" href="https://ucim.devsign.ar/" target="_blank" rel="noopener noreferrer">Visitar ucim.devsign.ar ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panel 4: Polaris, Club Ñuñorco y DPC -->
+      <article class="case-panel" id="case-panel-otros" role="tabpanel" aria-labelledby="case-tab-otros" data-case-panel="otros" hidden>
+        <div class="cases-multi">
+          <div class="cases-multi__card">
+            <div class="cases-multi__preview">
+              <img class="cases-multi__img" src="/assets/img/casos/polaris.webp" alt="Plataforma y CRM de Polaris" width="1902" height="943" loading="lazy" decoding="async">
+            </div>
+            <div class="cases-multi__top">
+              <span class="client-card__tag">Consultora Internacional</span>
+              <a class="case__ext" href="https://polariscg.com.ar/" target="_blank" rel="noopener noreferrer">polariscg.com.ar ↗</a>
+            </div>
+            <h3 class="cases-multi__title">Polaris Cooperation Group</h3>
+            <p class="cases-multi__text">
+              CRM a medida para seguimiento de proyectos, clientes y facturación internacional, más el diseño de identidad y sitio web corporativo bilingüe.
+            </p>
+            <ul class="case__tags" role="list">
+              <li>CRM de proyectos</li>
+              <li>Identidad de marca</li>
+              <li>Web institucional</li>
+            </ul>
+          </div>
+
+          <div class="cases-multi__card">
+            <div class="cases-multi__preview">
+              <img class="cases-multi__img" src="/assets/img/casos/nunorco.webp" alt="Portal oficial y sistema de socios de Club Atlético Ñuñorco" width="1896" height="955" loading="lazy" decoding="async">
+            </div>
+            <div class="cases-multi__top">
+              <span class="client-card__tag">Club Deportivo · Monteros</span>
+              <a class="case__ext" href="https://nunorco.devsign.ar/" target="_blank" rel="noopener noreferrer">nunorco.devsign.ar ↗</a>
+            </div>
+            <h3 class="cases-multi__title">Club Atlético Ñuñorco</h3>
+            <p class="cases-multi__text">
+              Portal oficial del club, padrón administrativo para control de socios, emisión de carnet digital con estado de cuota al día y novedades.
+            </p>
+            <ul class="case__tags" role="list">
+              <li>Gestión de socios</li>
+              <li>Carnet digital</li>
+              <li>Sitio oficial</li>
+            </ul>
+          </div>
+
+          <div class="cases-multi__card">
+            <div class="cases-multi__preview">
+              <img class="cases-multi__img" src="/assets/img/casos/dpc.webp" alt="Sitio institucional y catálogo de DPC Salud" width="1906" height="950" loading="lazy" decoding="async">
+            </div>
+            <div class="cases-multi__top">
+              <span class="client-card__tag">Salud y Distribución · Tucumán</span>
+              <a class="case__ext" href="https://dpc.com.ar/" target="_blank" rel="noopener noreferrer">dpc.com.ar ↗</a>
+            </div>
+            <h3 class="cases-multi__title">DPC Insumos Médicos</h3>
+            <p class="cases-multi__text">
+              Sitio institucional y catálogo digital de equipamiento e insumos de salud para clínicas, hospitales y profesionales de San Miguel de Tucumán.
+            </p>
+            <ul class="case__tags" role="list">
+              <li>Catálogo digital</li>
+              <li>Web corporativa</li>
+              <li>Contacto comercial</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- QHATU · Producto propio destacado -->
+  <section class="section section--dark qhatu" id="qhatu" aria-labelledby="qhatu-title">
+    <div class="container qhatu__inner">
+      <div class="qhatu__copy" data-reveal-group>
+        <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__dot"></span> Producto propio de Devsign</p>
+        <h2 class="qhatu__title" id="qhatu-title" data-reveal>Qhatu: la guía comercial de Monteros con POS integrado.</h2>
+        <p class="qhatu__lead" data-reveal>
+          Horarios, turnos, catálogos y promociones de los comercios de la ciudad en un solo lugar.
+          Y para cada local adherido, un punto de venta ágil para cobrar desde el mostrador.
+        </p>
+        <div class="qhatu__cards" data-reveal>
+          <div class="qhatu__mini">
+            <b>Guía y catálogo</b>
+            <span>Negocios, servicios, horarios y ofertas del día en Monteros.</span>
+          </div>
+          <div class="qhatu__mini">
+            <b>POS en el local</b>
+            <span>Ventas, stock y cobros integrados con la vidriera digital.</span>
+          </div>
+        </div>
+        <div class="qhatu__actions" data-reveal>
+          <a class="btn btn--light" href="https://qhatu.devsign.ar/" target="_blank" rel="noopener noreferrer">
+            Explorar Qhatu
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="btn btn--secondary" href="#contacto" data-interes="sistemas">Sumar mi comercio</a>
+        </div>
+      </div>
+
+      <div class="qhatu__media" data-reveal>
+        <div class="phone" aria-hidden="true">
+          <div class="phone__screen phone__screen--capture">
+            <span class="phone__notch"></span>
+            <img class="phone__capture" src="/assets/img/casos/qhatu2.webp" alt="App Qhatu Guía y Catálogo en smartphone" width="379" height="820" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVITACIONES WEB INTERACTIVAS · En el inicio con los 3 mockups en vivo -->
+  <section class="section mkt-invites home-invites" id="invitaciones" aria-labelledby="home-invites-title">
+    <div class="container">
+      <div class="home-invites__head" data-reveal-group>
+        <div>
+          <p class="kicker" data-reveal>Invitaciones web interactivas</p>
+          <h2 class="cases__title" id="home-invites-title" data-reveal>
+            Tarjetas digitales listas para compartir por WhatsApp.
+          </h2>
+          <p class="cases__lead" data-reveal>
+            Un servicio ágil para casamientos, 15 años, bautismos y eventos: cuenta regresiva en vivo,
+            ubicación con GPS, confirmación de asistencia y mesa de regalos con alias a un toque.
+          </p>
+        </div>
+        <div class="home-invites__head-actions" data-reveal>
+          <a
+            class="btn btn--primary"
+            href="https://wa.me/5493863515328?text=Hola%20Devsign%2C%20quiero%20consultar%20por%20una%20invitaci%C3%B3n%20web%20digital."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pedir modelos por WhatsApp
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="invites-grid" data-reveal-group>
+        <!-- Mockup 1: Casamientos -->
+        <article class="invite-card" data-reveal>
+          <div class="invite-card__stage" aria-hidden="true">
+            <div class="invite-phone invite-phone--real">
+              <span class="invite-phone__notch"></span>
+              <img class="invite-phone__capture" src="/assets/img/invitaciones/casamiento.webp" alt="Invitación web Lu y Mario" width="393" height="817" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="invite-card__body">
+            <span class="mkt-piece__tag">Boda &amp; Civil</span>
+            <h3 class="invite-card__title">Lu &amp; Mario</h3>
+            <p class="invite-card__text">
+              Cuenta regresiva interactiva, ubicación GPS de ceremonia y fiesta, confirmación de asistencia en un toque y alias para regalos.
+            </p>
+            <a class="invite-card__link" href="https://invitacion-lu-y-mario.netlify.app/" target="_blank" rel="noopener noreferrer">
+              <span>Ver demo en vivo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Mockup 2: 15 años -->
+        <article class="invite-card" data-reveal>
+          <div class="invite-card__stage" aria-hidden="true">
+            <div class="invite-phone invite-phone--real">
+              <span class="invite-phone__notch"></span>
+              <img class="invite-phone__capture" src="/assets/img/invitaciones/quince.webp" alt="Invitación digital Mis 15 Mili" width="474" height="823" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="invite-card__body">
+            <span class="mkt-piece__tag">15 Años &amp; Egresados</span>
+            <h3 class="invite-card__title">Mis 15 Mili</h3>
+            <p class="invite-card__text">
+              Book fotográfico integrado, sugerencia de temas musicales para la fiesta, dress code y confirmación directa por WhatsApp.
+            </p>
+            <a class="invite-card__link" href="https://devsign.ar/sinpapel/Mis15Mili/" target="_blank" rel="noopener noreferrer">
+              <span>Ver demo en vivo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Mockup 3: Bautismo / Eventos -->
+        <article class="invite-card" data-reveal>
+          <div class="invite-card__stage" aria-hidden="true">
+            <div class="invite-phone invite-phone--real">
+              <span class="invite-phone__notch"></span>
+              <img class="invite-phone__capture" src="/assets/img/invitaciones/bautismo.webp" alt="Invitación digital Mi Bautismo Paulina" width="466" height="834" loading="lazy" decoding="async">
+            </div>
+          </div>
+          <div class="invite-card__body">
+            <span class="mkt-piece__tag">Bautismo &amp; Comunión</span>
+            <h3 class="invite-card__title">Mi Bautismo · Paulina</h3>
+            <p class="invite-card__text">
+              Tarjeta digital personalizada con dedicatoria, mapa del templo, horario de recepción y confirmación sin desperdicio de papel.
+            </p>
+            <a class="invite-card__link" href="https://devsign.ar/sinpapel/paulina/?tarjeta=30" target="_blank" rel="noopener noreferrer">
+              <span>Ver demo en vivo</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M7 17L17 7M9 7h8v8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETING, IDENTIDAD E INSTAGRAM EN EL INICIO (Puente directo a /marketing/ y @devsign.ar) -->
+  <section class="section section--paper home-mkt" id="marketing-inicio" aria-labelledby="home-mkt-title">
+    <div class="container">
+      <div class="home-mkt__head" data-reveal-group>
+        <div>
+          <p class="kicker" data-reveal>Marketing, identidad y redes</p>
+          <h2 class="cases__title" id="home-mkt-title" data-reveal>
+            Diseño de marca y contenido en @devsign.ar
+          </h2>
+          <p class="cases__lead" data-reveal>
+            Además del software, tenemos un área dedicada a crear identidades visuales, producir
+            reels y manejar las redes sociales de negocios locales.
+          </p>
+        </div>
+        <a class="btn btn--primary" href="/marketing/" data-reveal>
+          Ir a la página de Marketing
+          <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="home-mkt__bento" data-reveal-group>
+        <!-- Columna izquierda (7 cols): Muestra del portfolio real de identidad -->
+        <div class="home-mkt__portfolio" data-reveal>
+          <div class="home-mkt__logos">
+            <a class="home-mkt__logo-tile" href="/marketing/#portfolio" aria-label="Ver identidad de El Cercado en Marketing">
+              <img src="/assets/img/portfolio/pieza-03.webp" alt="El Cercado Comuna Rural" width="900" height="900" loading="lazy" decoding="async">
+              <span>El Cercado</span>
+            </a>
+            <a class="home-mkt__logo-tile" href="/marketing/#portfolio" aria-label="Ver identidad de Skill Fitness Training en Marketing">
+              <img src="/assets/img/portfolio/pieza-01.webp" alt="Skill Fitness Training" width="900" height="900" loading="lazy" decoding="async">
+              <span>Skill Fitness</span>
+            </a>
+            <a class="home-mkt__logo-tile" href="/marketing/#portfolio" aria-label="Ver identidad de JC Refrigeraciones en Marketing">
+              <img src="/assets/img/portfolio/pieza-02.webp" alt="JC Refrigeraciones" width="750" height="734" loading="lazy" decoding="async">
+              <span>JC Refrigeraciones</span>
+            </a>
+            <a class="home-mkt__logo-tile" href="/marketing/#portfolio" aria-label="Ver identidad de Polaris en Marketing">
+              <img src="/assets/img/portfolio/pieza-04.webp" alt="Polaris Cooperation Group" width="900" height="900" loading="lazy" decoding="async">
+              <span>Polaris Group</span>
+            </a>
+          </div>
+          <div class="home-mkt__portfolio-foot">
+            <div>
+              <h3>Portfolio de identidad y diseño gráfico</h3>
+              <p>Logos, manuales de marca, cartelería y piezas de comunicación.</p>
+            </div>
+            <a class="bento-service__cta" href="/marketing/#portfolio">
+              <span>Ver los 6 casos de diseño</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna derecha (5 cols): Conexión en vivo con Instagram @devsign.ar y Reels -->
+        <aside class="home-mkt__ig" data-reveal aria-label="Instagram de Devsign">
+          <div class="home-mkt__ig-top">
+            <div class="home-mkt__ig-profile">
+              <span class="home-mkt__ig-avatar" aria-hidden="true">DS</span>
+              <div>
+                <strong class="home-mkt__ig-handle">@devsign.ar</strong>
+                <span class="home-mkt__ig-sub">Reels · Diseño · Sistemas · Redes</span>
+              </div>
+            </div>
+            <a
+              class="home-mkt__ig-follow"
+              href="https://www.instagram.com/devsign.ar/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Seguir en Instagram ↗
+            </a>
+          </div>
+
+          <div class="home-mkt__reels-mini">
+            <a class="home-mkt__reel-pill" href="/marketing/#reels">
+              <span class="home-mkt__reel-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <div>
+                <strong>Identidades de marca desde cero</strong>
+                <span>Del boceto al manual entregado</span>
+              </div>
+              <svg class="home-mkt__reel-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="home-mkt__reel-pill" href="/marketing/#reels">
+              <span class="home-mkt__reel-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <div>
+                <strong>Producción de Reels para comercios</strong>
+                <span>Grabación en el local y edición dinámica</span>
+              </div>
+              <svg class="home-mkt__reel-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a class="home-mkt__reel-pill" href="/marketing/#reels">
+              <span class="home-mkt__reel-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </span>
+              <div>
+                <strong>Sistemas, Qhatu y lanzamientos</strong>
+                <span>Cómo digitalizamos negocios en Tucumán</span>
+              </div>
+              <svg class="home-mkt__reel-arrow" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M9 18l6-6-6-6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="home-mkt__ig-actions">
+            <a class="btn btn--light btn--sm" href="/marketing/#reels">Ver sección de Reels y Redes</a>
+            <a class="btn btn--secondary btn--sm" href="https://www.instagram.com/devsign.ar/reels/" target="_blank" rel="noopener noreferrer">Abrir @devsign.ar</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO + EQUIPO COMPACTO (Horizontal, sin scroll eterno) -->
+  <section class="section process-compact" id="proceso" aria-labelledby="proceso-title">
+    <div class="container">
+      <div class="process-compact__head" data-reveal-group>
+        <div>
+          <p class="kicker" data-reveal>Cómo trabajamos</p>
+          <h2 class="cases__title" id="proceso-title" data-reveal>Un proceso corto. Trato directo con nosotros.</h2>
+        </div>
+        <p class="cases__lead" data-reveal>
+          Hablás siempre con quien piensa, diseña y programa tu proyecto. Cuatro etapas claras de punta a punta.
+        </p>
+      </div>
+
+      <!-- 4 pasos horizontales en una sola fila -->
+      <ol class="process-grid" role="list" data-reveal-group>
+        <li class="process-card" data-reveal>
+          <span class="process-card__num" aria-hidden="true">Paso 01</span>
+          <h3 class="process-card__title">Relevamiento</h3>
+          <p class="process-card__text">Miramos cómo trabaja hoy tu negocio y definimos qué resolver primero.</p>
+          <p class="process-card__out"><b>Te llevás:</b> diagnóstico y alcance cerrado.</p>
+        </li>
+        <li class="process-card" data-reveal>
+          <span class="process-card__num" aria-hidden="true">Paso 02</span>
+          <h3 class="process-card__title">Prototipo</h3>
+          <p class="process-card__text">Armamos una versión navegable para que veas y pruebes las pantallas antes de programar.</p>
+          <p class="process-card__out"><b>Te llevás:</b> maqueta interactiva aprobada.</p>
+        </li>
+        <li class="process-card" data-reveal>
+          <span class="process-card__num" aria-hidden="true">Paso 03</span>
+          <h3 class="process-card__title">Desarrollo</h3>
+          <p class="process-card__text">Construimos por entregas cortas y probamos todo con datos reales de tu operación.</p>
+          <p class="process-card__out"><b>Te llevás:</b> el sistema o sitio en marcha.</p>
+        </li>
+        <li class="process-card" data-reveal>
+          <span class="process-card__num" aria-hidden="true">Paso 04</span>
+          <h3 class="process-card__title">Acompañamiento</h3>
+          <p class="process-card__text">Seguimos disponibles después de publicar para soporte, mejoras y nuevas funciones.</p>
+          <p class="process-card__out"><b>Te llevás:</b> línea directa sin intermediarios.</p>
+        </li>
+      </ol>
+
+      <!-- Equipo integrado en formato horizontal compacto -->
+      <div class="team-compact" id="equipo" data-reveal-group>
+        <article class="founder-card" data-reveal>
+          <img
+            class="founder-card__photo"
+            src="/assets/img/equipo/david.webp"
+            alt="David Lazarte — Desarrollo y sistemas en Devsign"
+            width="720"
+            height="792"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="founder-card__body">
+            <span class="founder-card__role">Socio fundador · Desarrollo y sistemas</span>
+            <h3 class="founder-card__name">David Lazarte</h3>
+            <p class="founder-card__bio">
+              Arquitectura de software, bases de datos, integraciones con IA y puesta en producción de sistemas a medida.
+            </p>
+          </div>
+        </article>
+
+        <article class="founder-card" data-reveal>
+          <img
+            class="founder-card__photo"
+            src="/assets/img/equipo/giuliano.webp"
+            alt="Giuliano Carbone — Diseño y producto en Devsign"
+            width="720"
+            height="792"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="founder-card__body">
+            <span class="founder-card__role">Socio fundador · Diseño, producto y marketing</span>
+            <h3 class="founder-card__name">Giuliano Carbone</h3>
+            <p class="founder-card__bio">
+              Experiencia de usuario, diseño de interfaces, identidad visual de marca y estrategia de contenidos digitales.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO / FORMULARIO CON FILTRO DINÁMICO -->
+  <section class="section section--dark contact" id="contacto" aria-labelledby="contacto-title">
+    <div class="container contact__inner">
+      <div class="contact__intro" data-reveal-group>
+        <p class="eyebrow eyebrow--light" data-reveal><span class="eyebrow__dot"></span> Hablemos</p>
+        <h2 class="contact__title" id="contacto-title" data-reveal>
+          Contanos qué necesitás. Te decimos cómo lo resolvemos.
+        </h2>
+        <p class="contact__text" data-reveal>
+          Elegí el tema, dejá tus datos y te respondemos con una propuesta concreta para tu negocio o evento.
+        </p>
+
+        <ul class="contact__list" data-reveal>
+          <li>
+            <a class="contact__item" href="https://wa.me/5493863515328" target="_blank" rel="noopener noreferrer">
+              <span>WhatsApp directo</span>
+              <strong>+54 9 3863 515 328</strong>
+            </a>
+          </li>
+          <li>
+            <a class="contact__item" href="https://www.instagram.com/devsign.ar/" target="_blank" rel="noopener noreferrer">
+              <span>Instagram</span>
+              <strong>@devsign.ar</strong>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact__card" data-reveal>
+        <form class="form" data-contact-form method="POST" action="/contacto.php">
+          <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="form__row">
+            <div class="field">
+              <label class="field__label" for="f-nombre">Nombre</label>
+              <input class="input" id="f-nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-negocio">Negocio o evento</label>
+              <input class="input" id="f-negocio" name="negocio" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-whatsapp">WhatsApp</label>
+            <input class="input" id="f-whatsapp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" placeholder="+54 9 3863 ..." required>
+          </div>
+
+          <fieldset class="field field--fieldset">
+            <legend class="field__label">Qué necesitás</legend>
+            <div class="choice-grid">
+              <label class="choice">
+                <input type="radio" name="interes" value="sistemas" data-interes="sistemas" required>
+                <span class="choice__dot" aria-hidden="true"></span>
+                Sistema o POS
+              </label>
+              <label class="choice">
+                <input type="radio" name="interes" value="automatizacion" data-interes="automatizacion">
+                <span class="choice__dot" aria-hidden="true"></span>
+                Automatización o IA
+              </label>
+              <label class="choice">
+                <input type="radio" name="interes" value="web" data-interes="web">
+                <span class="choice__dot" aria-hidden="true"></span>
+                Web o Invitación
+              </label>
+              <label class="choice">
+                <input type="radio" name="interes" value="marketing" data-interes="marketing">
+                <span class="choice__dot" aria-hidden="true"></span>
+                Marketing y diseño
+              </label>
+              <label class="choice">
+                <input type="radio" name="interes" value="general" data-interes="general">
+                <span class="choice__dot" aria-hidden="true"></span>
+                Todavía no sé
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Campos contextuales dinámicos según el interés elegido -->
+          <div class="form__dynamic-wrap">
+            <div class="field form__dynamic" data-dynamic="sistemas">
+              <label class="field__label" for="f-detalle-sistemas">
+                ¿Qué proceso te gustaría ordenar primero?
+                <span class="field__hint">Opcional</span>
+              </label>
+              <input class="input" id="f-detalle-sistemas" name="detalle_sistemas" type="text" placeholder="Ej: Control de stock, ventas de mostrador, turnos, repartos...">
+            </div>
+
+            <div class="field form__dynamic" data-dynamic="automatizacion">
+              <label class="field__label" for="f-detalle-ia">
+                ¿Qué tarea o canal te gustaría automatizar?
+                <span class="field__hint">Opcional</span>
+              </label>
+              <input class="input" id="f-detalle-ia" name="detalle_ia" type="text" placeholder="Ej: Respuestas automáticas en WhatsApp, turnos, inscripciones...">
+            </div>
+
+            <div class="field form__dynamic" data-dynamic="web">
+              <label class="field__label" for="f-detalle-web">
+                ¿Buscás un sitio web o una invitación digital?
+                <span class="field__hint">Opcional</span>
+              </label>
+              <input class="input" id="f-detalle-web" name="detalle_web" type="text" placeholder="Ej: Web institucional, catálogo, invitación de 15 años o boda...">
+            </div>
+
+            <div class="field form__dynamic" data-dynamic="marketing">
+              <label class="field__label" for="f-detalle-marketing">
+                ¿Qué piezas o servicios te interesan?
+                <span class="field__hint">Opcional</span>
+              </label>
+              <input class="input" id="f-detalle-marketing" name="detalle_marketing" type="text" placeholder="Ej: Identidad de marca, manejo de redes, reels...">
+            </div>
+
+            <div class="field form__dynamic" data-dynamic="general">
+              <label class="field__label" for="f-detalle-general">
+                ¿Qué tenés en mente para tu proyecto?
+                <span class="field__hint">Opcional</span>
+              </label>
+              <input class="input" id="f-detalle-general" name="detalle_general" type="text" placeholder="Contanos tu idea o el problema que querés resolver...">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="f-mensaje">Mensaje o consulta adicional</label>
+            <textarea class="textarea" id="f-mensaje" name="mensaje" rows="3" placeholder="Contanos brevemente cómo podemos ayudarte."></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--lg form__submit" type="submit">
+            Enviar consulta
+            <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <p class="form__status" data-form-status role="status" aria-live="polite"></p>
+          <p class="form__legal">Trato directo con David y Giuliano. No compartimos tus datos.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER:START · editar en _partials/footer.html y correr _tools/sync-partials.mjs -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="/" aria-label="Devsign, ir al inicio">
+          <img
+            class="footer__logo"
+            src="/assets/img/logo.webp"
+            alt="Devsign"
+            width="156"
+            height="53"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
+        <p>
+          Sistemas, automatizaciones y webs para negocios de Monteros y Tucumán.
+          Diseñamos la operación, no solo la vidriera.
+        </p>
+        <ul class="social">
+          <li>
+            <a href="https://wa.me/5493863515328" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp de Devsign">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M20 11.6a8.4 8.4 0 0 1-12.4 7.4L3.5 20.5l1.5-4A8.4 8.4 0 1 1 20 11.6Z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.8 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.4.4l.6 1.4c.1.2 0 .4-.1.6l-.5.6c.5.9 1.2 1.6 2.1 2.1l.6-.6c.2-.1.4-.2.6-.1l1.4.6c.3.1.4.2.4.5v.5c0 .3-.1.6-.4.8-.5.4-1.2.6-1.9.5-3-.5-5.3-2.8-5.8-5.8-.1-.6 0-1.2.4-1.6Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/devsign.ar/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Devsign">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100047006755167" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Devsign">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+                <path d="M14.5 8.5h2V5.5h-2c-2.2 0-3.5 1.4-3.5 3.6v2H9v3h2v6h3v-6h2.3l.5-3H14V9.4c0-.6.2-.9.5-.9Z" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Navegación</h2>
+        <ul class="footer__list">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/#casos">Casos</a></li>
+          <li><a href="/#proceso">Proceso</a></li>
+          <li><a href="/marketing/">Marketing y diseño</a></li>
+          <li><a href="/#contacto">Contacto</a></li>
+          <li><a href="https://qhatu.devsign.ar/" target="_blank" rel="noopener noreferrer">Qhatu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Qué hacemos</h2>
+        <ul class="footer__list">
+          <li><span>Sistemas de gestión y POS</span></li>
+          <li><span>Automatización y agentes de IA</span></li>
+          <li><span>Webs y plataformas</span></li>
+          <li><span>Marketing y diseño</span></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Contacto</h2>
+        <ul class="footer__list">
+          <li><a href="https://wa.me/5493863515328" target="_blank" rel="noopener noreferrer">+54 9 3863 515 328</a></li>
+          <li><a href="mailto:admin@devsign.ar">admin@devsign.ar</a></li>
+          <li><a href="https://www.instagram.com/devsign.ar/" target="_blank" rel="noopener noreferrer">@devsign.ar</a></li>
+          <li><span>Monteros, Tucumán</span></li>
+          <li><span>Argentina</span></li>
+        </ul>
+      </div>
     </div>
 
-    <div id="info" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="info-text">No subestimes el impacto de la tecnología en tu negocio. Invertir en ella es
-                        invertir en tu éxito continuo." - Sheryl Sandberg</div>
-
-                    <a href="https://walink.co/b48653" class="ybtn ybtn-accent-color ybtn-shadow">Trabajemos juntos</a>
-                </div>
-            </div>
-        </div>
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Devsign. Todos los derechos reservados.</p>
+      <div class="footer__legal">
+        <a href="/#contacto">Trabajemos juntos</a>
+        <a href="#top">Volver arriba</a>
+      </div>
     </div>
-    <div id="more-info" class="container-fluid">
-        <div class="bg-custom"></div>
-        <div class="container">
-            <div class="row" id="about">
-                <div class="col-md-4">
-                    <div class="links-holder">
-                        <ul>
-                            <li>
-                                <div class="info-link opened" data-id="1">Misión</div>
-                            </li>
-                            <li>
-                                <div class="info-link" data-id="2">Visión</div>
-                            </li>
-                            <li>
-                                <div class="info-link" data-id="3">Compromiso Dev</div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="info-details-holder">
-                        <div class="info-details info-d1 show-details">
-                            <h1>Potenciando Identidades<br>
-                                Transformando Negocios.</h1>
-                            <p> Abrazamos el diseño gráfico y el desarrollo web como herramientas esenciales para
-                                destacar la identidad de cada cliente. Desde la creación de flyers impactantes hasta la
-                                implementación de sistemas web a medida, nos comprometemos a ofrecer soluciones
-                                auténticas que reflejen y fortalezcan la esencia de cada negocio, trabajando en
-                                colaboración estrecha para formar parte integral de su éxito.</p>
-                        </div>
-                        <div class="info-details info-d2">
-                            <h1>Construyendo Juntos <br>
-                                El Futuro Digital.</h1>
-                            <p>En nuestra visión del futuro, somos el socio tecnológico que se integra plenamente en el
-                                tejido de cada negocio, permitiendo a nuestros clientes enfocarse por completo en su
-                                labor mientras nosotros gestionamos con maestría su presencia digital.</p>
-                        </div>
-                        <div class="info-details info-d3">
-                            <h1>Nuestra Promesa de Valor</h1>
-                            <p>Nos comprometemos a ser un aliado estratégico y una extensión vital de cada negocio.
-                                Nuestra promesa es trabajar codo a codo con nuestros clientes, comprendiendo sus metas y
-                                desafíos para brindar soluciones de diseño gráfico y desarrollo web que no solo cumplen,
-                                sino que superan expectativas. Nos dedicamos a proporcionar un valor tangible, aportando
-                                no solo conocimientos técnicos, sino también un compromiso genuino con el éxito y
-                                crecimiento de quienes confían en nosotros."
+  </div>
+</footer>
+<!-- FOOTER:END -->
 
-                                Este compromiso destaca la colaboración estrecha, la comprensión profunda de las
-                                necesidades del cliente y la dedicación al éxito conjunto, agregando un valor
-                                significativo a los servicios ofrecidos por tu empresa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="services" class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="row-title">Nuestros Servicios</div>
-                    <div class="row-subtitle">Nos integramos a tu negocio somos tu socio digital.
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <img src="images/service-icon2.png" alt="">
-                            </div>
-                            <div class="service-title"><a href="https://walink.co/b48653">Diseño web</a></div>
-                            <div class="service-details">
-                                <p>Ya sea un sitio estático o <br> una plataforma dinámica
-                                    , en nuestras manos es garantia de creatividad </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <img src="images/service-icon3.png" alt="">
-                            </div>
-                            <div class="service-title"><a href="https://walink.co/b48653">Sistemas de Gestión</a></div>
-                            <div class="service-details">
-                                <p>Olvidate de usar cuadernos, <br>
-                                    informatizamos tu negocio con un sistema personzalido</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <img src="images/wordpress.png" alt="">
-                            </div>
-                            <div class="service-title"><a href="https://walink.co/b48653">Desarrollo en Wordpress</a>
-                            </div>
-                            <div class="service-details">
-                                <p>Sitios dinamicos autoadministrables <br>
-                                    multifuncion y en tiempo record de entrega.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <img src="images/service-icon4.svg" alt="">
-                            </div>
-                            <div class="service-title"><a href="https://walink.co/b48653">Hosting y Mantenimiento</a>
-                            </div>
-                            <div class="service-details">
-                                <p>Alojamos o migramos tu sitio a nuestros servidores y nos encargamos de la
-                                    administración.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <img src="images/ux.png" alt="">
-                            </div>
-                            <div class="service-title"><a href="https://walink.co/b48653">Diseño Grafico</a></div>
-                            <div class="service-details">
-                                <p>Eleva tu presencia visual con flyers que no solo informan, sino que cautivan y
-                                    comunica tu mensaje de manera
-                                    efectiva en tus redes o cartelería.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="service-box">
-                            <div class="service-icon">
-                                <img src="images/cm.png" alt="">
-                            </div>
-                            <div class="service-title"><a href="https://walink.co/b48653">Gestión de Redes Sociales</a>
-                            </div>
-                            <div class="service-details">
-                                <p>Creamos el contenido y la <br> comunicación visual <br>
-                                    para las redes de tu negocio</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="message1" class="container-fluid message-area">
-            <div class="bg-color"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="text-other-color1">¿Estás Listo?</div>
-                        <div class="text-other-color2">Llevemos tu negocio a un nuevo nivel</div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="buttons-holder">
-                            <!-- <a href="signup.html" class="ybtn ybtn-accent-color">Create Your Account</a> -->
-                            <a href="https://walink.co/b48653" class="ybtn ybtn-white ybtn-shadow"
-                                target="_blank">Contactanos</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="apps" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row-icon"><img src="images/click-icon.png"></div>
-                        <div class="row-title">Casos de Éxito</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="apps-holder">
-                            <div class="apps-links-holder">
-                                <div class="app-icon-holder app-icon-holder1 opened" data-id="1">
-                                    <div class="app-icon"><img class="" src="images/logo-hammer_Mesa de trabajo 1.png"
-                                            alt="wordpress"></div>
-                                </div>
-                                <div class="app-icon-holder app-icon-holder2" data-id="2">
-                                    <div class="app-icon"><img class="" src="images/logo-fega_Mesa de trabajo 1.png"
-                                            alt="joomla"></div>
-                                </div>
-                                <div class="app-icon-holder app-icon-holder3" data-id="3">
-                                    <div class="app-icon"><img class="" src="images/logo-rossomix_Mesa de trabajo 1.png"
-                                            alt="drupal"></div>
-                                </div>
-                                <div class="app-icon-holder app-icon-holder4" data-id="4">
-                                    <div class="app-icon"><img class="" src="images/logo-colegio_Mesa de trabajo 1.png"
-                                            alt="magento"></div>
-                                </div>
-                                <div class="app-icon-holder app-icon-holder5" data-id="5">
-                                    <div class="app-icon"><img src="images/logo-body_Mesa de trabajo 1.png"
-                                            alt="hammersite"></div>
-                                </div>
-                            </div>
-                            <div class="apps-details-holder">
-                                <div class="app-details">
-                                    <div class="app-details1 show-details">
-                                        <div class="col-md-5">
-                                            <div class="img-holder">
-                                                <img src="images/project-hammer.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="app-title">desarrollo web y sistema interno</div>
-                                            <div class="app-text">Hammer X, el
-                                                gigante del fitness, confió en nosotros para
-                                                llevar su presencia en línea a nuevas alturas. Desarrollamos un sitio
-                                                web a medida desde cero, más un sistema interno para el staff. </div>
-                                            <div class="app-link">
-                                                <a href="https://hammer.ar/" class="ybtn ybtn-white ybtn-shadow"
-                                                    target="_blank">ver sitio</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-details2">
-                                        <div class="col-md-5">
-                                            <div class="img-holder">
-                                                <img src="images/project-fegar.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="app-title">diseño web</div>
-                                            <div class="app-text">La constructora con una larga historia, nos eligió
-                                                para revitalizar su
-                                                presencia online. Creamos un sitio institucional. Alojamiento y cuentas
-                                                de correo incluidos</div>
-                                            <div class="app-link">
-                                                <a href="https://fegagroup.com.ar/" class="ybtn ybtn-white ybtn-shadow"
-                                                    target="_blank">ver sitio</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-details3">
-                                        <div class="col-md-5">
-                                            <div class="img-holder">
-                                                <img src="images/project-rossomix.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="app-title">diseño web</div>
-                                            <div class="app-text">Para esta empresa dedicada
-                                                a servicios excepcionales, creamos un sitio a medida que refleja su
-                                                grandeza. Muy pronto despliegue en producción, porque las cosas buenas
-                                                no
-                                                pueden esperar.</div>
-                                            <div class="app-link">
-                                                <a href="https://rossomix.netlify.app/"
-                                                    class="ybtn ybtn-white ybtn-shadow" target="_blank">ver sitio</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-details4">
-                                        <div class="col-md-5">
-                                            <div class="img-holder">
-                                                <img src="images/project-colegio.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="app-title"> desarrollo institucional wordpress</div>
-                                            <div class="app-text"> El
-                                                prestigioso Colegio nos encargaron un sitio institucional
-                                                autoadministrable con WordPress, permitiendo un flujo constante de
-                                                información rápida y novedades en el momento adecuado.</div>
-                                            <div class="app-link">
-                                                <a href="https://colsantisimorosario.edu.ar/"
-                                                    class="ybtn ybtn-white ybtn-shadow" target="_blank">ver sitio</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="app-details5">
-                                        <div class="col-md-5">
-                                            <div class="img-holder">
-                                                <img src="images/project-body.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <div class="app-title"> booking</div>
-                                            <div class="app-text">El famoso
-                                                Salón de Belleza en Pinamar necesitaba una solución ágil y ordenada.
-                                                Creamos un sistema de booking con WordPress para gestionar los turnos de
-                                                manera tan fácil como ordenada </div>
-                                            <div class="app-link">
-                                                <a href="https://bodyshanti.com.ar/" class="ybtn ybtn-white ybtn-shadow"
-                                                    target="_blank">ver sitio</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div id="pricing" class="container-fluid">
-            <div class="bg-color"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row-title">Web Hosting Plans</div>
-                        <div class="row-subtitle">Choose what's best</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="pricing-box pricing-unity pricing-color1">
-                            <div class="pricing-content">
-                                <div class="pricing-icon">
-                                    <img src="images/service-icon1.svg" alt="">
-                                </div>
-                                <div class="pricing-title">Web Hosting</div>
-                                <div class="price-title">Starting from</div>
-                                <div class="pricing-price">$4.8</div>
-                                <div class="pricing-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus.<br>
-                                        Blanditiis praesentium voludiv.</p>
-                                </div>
-                                <div class="pricing-link">
-                                    <a class="ybtn" href="webhosting.html">See web hosting plans</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="pricing-box pricing-unity pricing-color2 featured">
-                            <div class="pricing-content">
-                                <div class="pricing-icon">
-                                    <img src="images/service-icon4.svg" alt="">
-                                </div>
-                                <div class="pricing-title">Cloud Server</div>
-                                <div class="price-title">Starting from</div>
-                                <div class="pricing-price">$10.8</div>
-                                <div class="pricing-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus.<br>
-                                        Blanditiis praesentium voludiv.</p>
-                                </div>
-                                <div class="pricing-link">
-                                    <a class="ybtn" href="cloudhosting.html">See cloud servers plans</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="pricing-box pricing-unity pricing-color3">
-                            <div class="pricing-content">
-                                <div class="pricing-icon">
-                                    <img src="images/service-icon3.svg" alt="">
-                                </div>
-                                <div class="pricing-title">VPS Server</div>
-                                <div class="price-title">Starting from</div>
-                                <div class="pricing-price">$18.8</div>
-                                <div class="pricing-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus.<br>
-                                        Blanditiis praesentium voludiv.</p>
-                                </div>
-                                <div class="pricing-link">
-                                    <a class="ybtn" href="vpshosting.html">See vps servers plans</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div id="custom-plan" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h4>Create your plan</h4>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                            voluptatum div atque corrupti quos dolores et quas molestias.</p>
-                        <div class="custom-plan-box">
-                            <input id="c-plan" type="text" data-slider-min="100" data-slider-max="10000"
-                                data-slider-step="100" data-slider-value="5000" data-currency="$" data-unit="GB">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="custom-plan-info-box">
-                            <div class="title">Your custom plan</div>
-                            <div class="details">
-                                <div class="feature feature1"><span>5</span> GB</div>
-                                <div class="feature feature2"><span>20</span> GB Bandwidth</div>
-                                <div class="feature feature3">E-mail accounts</div>
-                                <div class="feature feature4">Unlimited other features</div>
-                            </div>
-                            <div class="price">$250</div>
-                            <div class="btn-holder">
-                                <a href="signup.html" class="ybtn ybtn-accent-color">Order now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div id="features" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="row-title">Our hosting features</div>
-                        <div class="row-subtitle"></div>
-                    </div>
-                </div>
-                <div class="row rtl-cols">
-                    <div class="col-sm-12 col-md-6">
-                        <div id="features-links-holder">
-                            <div class="icons-axis">
-                                <img src="images/features-icon.png" alt="">
-                            </div>
-                            <div class="feature-icon-holder feature-icon-holder1 opened" data-id="1">
-                                <div class="animation-holder">
-                                    <div class="special-gradiant"></div>
-                                </div>
-                                <div class="feature-icon"><i class="htfy htfy-worldwide"></i></div>
-                                <div class="feature-title">%99 Uptime</div>
-                            </div>
-                            <div class="feature-icon-holder feature-icon-holder2" data-id="2">
-                                <div class="animation-holder">
-                                    <div class="special-gradiant"></div>
-                                </div>
-                                <div class="feature-icon"><i class="htfy htfy-cogwheel"></i></div>
-                                <div class="feature-title">Easy control panel</div>
-                            </div>
-                            <div class="feature-icon-holder feature-icon-holder3" data-id="3">
-                                <div class="animation-holder">
-                                    <div class="special-gradiant"></div>
-                                </div>
-                                <div class="feature-icon"><i class="htfy htfy-location"></i></div>
-                                <div class="feature-title">Email Marketing</div>
-                            </div>
-                            <div class="feature-icon-holder feature-icon-holder4" data-id="4">
-                                <div class="animation-holder">
-                                    <div class="special-gradiant"></div>
-                                </div>
-                                <div class="feature-icon"><i class="htfy htfy-download"></i></div>
-                                <div class="feature-title">1CLICK Script Installs</div>
-                            </div>
-                            <div class="feature-icon-holder feature-icon-holder5" data-id="5">
-                                <div class="animation-holder">
-                                    <div class="special-gradiant"></div>
-                                </div>
-                                <div class="feature-icon"><i class="htfy htfy-like"></i></div>
-                                <div class="feature-title">7/24 Support</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div id="features-holder">
-                            <div class="feature-box feature-d1 show-details">
-                                <div class="feature-title-holder">
-                                    <span class="feature-icon"><i class="htfy htfy-worldwide"></i></span>
-                                    <span class="feature-title">%99 Uptime</span>
-                                </div>
-                                <div class="feature-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum div
-                                        atque corrupti quos dolores et quas molestias.</p>
-
-                                    <p>dignissimos ducimus qui blanditiis praesentium
-                                        voluptatum div atque corrupti quos dolores et quas
-                                        unimo molestias.</p>
-                                </div>
-                            </div>
-                            <div class="feature-box feature-d2">
-                                <div class="feature-title-holder">
-                                    <span class="feature-icon"><i class="htfy htfy-cogwheel"></i></span>
-                                    <span class="feature-title">Easy control panel</span>
-                                </div>
-                                <div class="feature-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum div
-                                        atque corrupti quos dolores et quas molestias.</p>
-
-                                    <p>dignissimos ducimus qui blanditiis praesentium
-                                        voluptatum div atque corrupti quos dolores et quas
-                                        unimo molestias.</p>
-                                </div>
-                            </div>
-                            <div class="feature-box feature-d3">
-                                <div class="feature-title-holder">
-                                    <span class="feature-icon"><i class="htfy htfy-location"></i></span>
-                                    <span class="feature-title">Email Marketing</span>
-                                </div>
-                                <div class="feature-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum div
-                                        atque corrupti quos dolores et quas molestias.</p>
-
-                                    <p>dignissimos ducimus qui blanditiis praesentium
-                                        voluptatum div atque corrupti quos dolores et quas
-                                        unimo molestias.</p>
-                                </div>
-                            </div>
-                            <div class="feature-box feature-d4">
-                                <div class="feature-title-holder">
-                                    <span class="feature-icon"><i class="htfy htfy-download"></i></span>
-                                    <span class="feature-title">1CLICK Script Installs</span>
-                                </div>
-                                <div class="feature-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum div
-                                        atque corrupti quos dolores et quas molestias.</p>
-
-                                    <p>dignissimos ducimus qui blanditiis praesentium
-                                        voluptatum div atque corrupti quos dolores et quas
-                                        unimo molestias.</p>
-                                </div>
-                            </div>
-                            <div class="feature-box feature-d5">
-                                <div class="feature-title-holder">
-                                    <span class="feature-icon"><i class="htfy htfy-like"></i></span>
-                                    <span class="feature-title">7/24 Support</span>
-                                </div>
-                                <div class="feature-details">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos
-                                        ducimus qui blanditiis praesentium voluptatum div
-                                        atque corrupti quos dolores et quas molestias.</p>
-
-                                    <p>dignissimos ducimus qui blanditiis praesentium
-                                        voluptatum div atque corrupti quos dolores et quas
-                                        unimo molestias.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div id="team" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row-title">Nosotros</div>
-                        <div class="row-subtitle"></div>
-                    </div>
-                </div>
-                <div class="row team-holder">
-                    <div class="col-sm-6 col-md-6">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/david.png" alt="" /></div>
-                            </div>
-                            <div class="person-name">David Lazarte</div>
-                            <div class="person-title">CEO & CO-Founder</div>
-                            <div class="person-social">
-                                <a href="https://github.com/DavLazarte"><i class="fab fa-github"></i></a>
-                                <a href="https://www.instagram.com/dav.lazarte/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://wa.me/5493863515328"><i class="fab fa-whatsapp"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/giuliano.png" alt="" /></div>
-                            </div>
-                            <div class="person-name">Giuliano Carbone</div>
-                            <div class="person-title">CEO & CO-Founder</div>
-                            <div class="person-social">
-                                <a href="https://github.com/DavLazarte"><i class="fab fa-github"></i></a>
-                                <a href="https://www.instagram.com/giulianocarbone1/"><i class="fab fa-instagram"></i></a>
-                                <a href="https://wa.me/5493863552800"><i class="fab fa-whatsapp"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team3.jpg" alt="" /></div>
-                            </div>
-                            <div class="person-name">David Adams</div>
-                            <div class="person-title">Server Admin</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team4.jpg" alt="" /></div>
-                            </div>
-                            <div class="person-name">Rose Masso</div>
-                            <div class="person-title">Quality Assurance</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team5.jpg" alt="" /></div>
-                            </div>
-                            <div class="person-name">Travis Walker</div>
-                            <div class="person-title">CO-Founder</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team6.jpg" alt="" /></div>
-                            </div>
-                            <div class="person-name">Bella Vayner</div>
-                            <div class="person-title">Client service</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team7.jpg" alt="" /></div>
-                            </div>
-                            <div class="person-name">Mary Wilson</div>
-                            <div class="person-title">Client service</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="person-box">
-                            <div class="person-icon">
-                                <div class="person-img"><img src="images/team8.jpg" alt="" /></div>
-                            </div>
-                            <div class="person-name">Craig Davids</div>
-                            <div class="person-title">Web Master</div>
-                            <div class="person-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
-        <div id="testimonials" class="container-fluid">
-            <div class="bg-color"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="row-title">Testimonios</div>
-                        <div class="row-subtitle">Como es trabajar con nosotros?</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div id="testimonials-slider">
-                            <div>
-                                <div class="details-holder">
-                                    <img class="photo" src="images/logo-hammer.png" alt="">
-                                    <h4>Carlos García</h4>
-                                    <h5>CEO & CO-Founder @hammerx</h5>
-                                    <p>Contratar el servicio de diseño web resultó ser una decisión
-                                        acertada. Desde el inicio, me sentí acompañado y entendido. No solo obtuve una
-                                        página web, ademas el proyecto mutó a un sistema interno y esto se dio gracias a
-                                        una colaboración genuina que superó mis expectativas. Los
-                                        resultados fueron más que satisfactorios; con el tiempo, me di cuenta de que
-                                        cada detalle estaba cuidadosamente considerado, y la página no solo reflejaba mi
-                                        visión, sino que la mejoraba. Gané confianza en el proceso y, gracias a la
-                                        libertad que me proporcionaron, pude agregar ideas que luego se integraron de
-                                        manera armoniosa en el proyecto.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="details-holder">
-                                    <img class="photo" src="images/logo-colegio_Mesa de trabajo 1.png" alt="">
-                                    <h4>Cecilia Bozza </h4>
-                                    <h5>Administrativa en Colegio Smo Rosario</h5>
-                                    <p>No solo cumplieron con nuestras expectativas, sino que las superaron con creces.
-                                        La creación de la web educativa fue un proceso fluido y colaborativo. La
-                                        atención a cada detalle y la disposición para abordar cualquier duda demostraron
-                                        su compromiso con la calidad y la satisfacción del cliente.
-                                        Recomendamos sin reservas Su capacidad para superar
-                                        expectativas y su disposición constante ante cualquier pregunta o inquietud
-                                        hacen que confiemos plenamente en su servicio. Son más que un equipo de diseño y
-                                        desarrollo web; son un socio confiable en el éxito de nuestros proyectos
-                                        digitales</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- <div id="more-features" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="row-title">Our Promise</div>
-                        <div class="row-subtitle">Your satisfaction is guaranteed. Indeed.</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-4">
-                        <div class="mfeature-box">
-                            <div class="mfeature-icon">
-                                <i class="htfy htfy-trophy"></i>
-                            </div>
-                            <div class="mfeature-title">%99.9 Uptime</div>
-                            <div class="mfeature-details">Mauris at libero sed justo pretium maximus ac non ex. Donec
-                                sit amet ultrices dolo.</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4">
-                        <div class="mfeature-box">
-                            <div class="mfeature-icon">
-                                <i class="htfy htfy-like"></i>
-                            </div>
-                            <div class="mfeature-title">Money Back Guarantee</div>
-                            <div class="mfeature-details">Mauris at libero sed justo pretium maximus ac non ex. Donec
-                                sit amet ultrices dolo.</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="mfeature-box">
-                            <div class="mfeature-icon">
-                                <i class="htfy htfy-cogwheel"></i>
-                            </div>
-                            <div class="mfeature-title">Best Support</div>
-                            <div class="mfeature-details">Mauris at libero sed justo pretium maximus ac non ex. Donec
-                                sit amet ultrices dolo.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div id="message2" class="container-fluid message-area normal-bg boxed">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="text-other-color1">Are you ready?</div>
-                        <div class="text-other-color2">create an account, or contact us.</div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="buttons-holder">
-                            <a href="signup.html" class="ybtn ybtn-accent-color">Create Your Account</a><a
-                                href="https://walink.co/b48653" class="ybtn ybtn-white ybtn-shadow" target="_blank">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div id="footer" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-4 col-md-3">
-                        <div class="address-holder">
-                            <div class="phone"><i class="fas fa-phone"></i> 3863 515 328</div>
-                            <div class="email"><i class="fas fa-envelope"></i> <a
-                                    href="" ><span class="__cf_email__" data-cfemail="e1888f878ea18584979288868fcf8093">[email&#160;protected]</span></a></div>
-                            <!-- <div class="address">
-                                <i class="fas fa-map-marker"></i>
-                                <div>City Avenue, Office 64,<br>
-                                    Floor 6, Milbourne,<br>
-                                    Australia.</div>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-2 col-md-2">
-                        <div class="footer-menu-holder">
-                            <h4>Company</h4>
-                            <ul class="footer-menu">
-                                <li><a href="#about">La agencia</a></li>
-                                <li><a href="#services">Servicios</a></li>
-                                <li><a href="https://walink.co/b48653">Contactanos</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-2 col-md-3">
-                        <div class="footer-menu-holder">
-                            <h4>Que es lo que hacemos?</h4>
-                            <ul class="footer-menu">
-                                <li><a href="#">Sitios Web</a></li>
-                                <li><a href="#">Flyers y Cartelería</a></li>
-                                <li><a href="#">Sistemas de Gestión</a></li>
-                                <li><a href="#">Sitios Autoadministrables en wordpress</a></li>
-                                <li><a href="#">eCommerce</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-3 col-md-3">
-                        <div class="footer-menu-holder">
-                            <h4>Y Ademas </h4>
-                            <ul class="footer-menu">
-                                <li><a href="#">Invitaciones Digitales</a></li>
-                                <li><a href="">Manejo de Redes Sociales</a></li>
-                                <li><a href="#">Asesorias</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-1 col-md-1">
-                        <div class="social-menu-holder">
-                            <ul class="social-menu">
-                                <li><a href="https://www.facebook.com/profile.php?id=100047006755167"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="https://www.instagram.com/devsign.ar/"><i class="fab fa-instagram"></i></a></li>
-                                <!-- <li><a href="#"><i class="fab fa-twitter"></i></a></li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false"
-            src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/bootstrap-slider.min.js"></script>
-        <script src="js/slick.min.js"></script>
-        <script src="js/main.js"></script>
+<script src="/assets/js/main.js?v=20261124d" defer></script>
 </body>
-
-
 </html>
